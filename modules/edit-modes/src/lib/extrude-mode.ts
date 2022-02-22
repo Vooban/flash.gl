@@ -1,18 +1,22 @@
-import bearing from '@turf/bearing';
+import turfBearing from '@turf/bearing';
+import turfCenterOfMass from '@turf/center-of-mass';
+
 import {
   generatePointsParallelToLinePoints,
   getPickedEditHandle,
   getPickedIntermediateEditHandle,
+  recursivelyTraverseNestedArrays,
 } from '../utils';
+import { point } from '@turf/helpers';
 import { FeatureCollection } from '../geojson-types';
 import { ModeProps, StartDraggingEvent, StopDraggingEvent, DraggingEvent } from '../types';
-import { ModifyMode } from './modify-mode';
 import { ImmutableFeatureCollection } from './immutable-feature-collection';
+import { GeoJsonEditMode, GuideFeatureCollection, PointerMoveEvent, Position } from '..';
+import { getIntermediatePosition } from './geojson-edit-mode';
 
-export class ExtrudeMode extends ModifyMode {
-  // this mode is busted =(
-
-  isPointAdded = false;
+export class ExtrudeMode extends GeoJsonEditMode {
+  _isPointAdded = false;
+  _cursor = null;
 
   handleDragging(event: DraggingEvent, props: ModeProps<FeatureCollection>): void {
     const editHandle = getPickedEditHandle(event.pointerDownPicks);
@@ -22,7 +26,7 @@ export class ExtrudeMode extends ModifyMode {
       let { positionIndexes } = editHandle.properties;
 
       const size = this.coordinatesSize(positionIndexes, featureIndex, props.data);
-      positionIndexes = this.isPointAdded
+      positionIndexes = this._isPointAdded
         ? this.nextPositionIndexes(positionIndexes, size)
         : positionIndexes;
       // p1 and p1 are end points for edge
@@ -56,6 +60,10 @@ export class ExtrudeMode extends ModifyMode {
     }
   }
 
+  handlePointerMove(event: PointerMoveEvent, props: ModeProps<FeatureCollection>): void {
+    this.updateCursor(event, props);
+  }
+
   handleStartDragging(event: StartDraggingEvent, props: ModeProps<FeatureCollection>) {
     const selectedFeatureIndexes = props.selectedIndexes;
 
@@ -86,7 +94,7 @@ export class ExtrudeMode extends ModifyMode {
           )
         ) {
           updatedData = updatedData.addPosition(featureIndex, positionIndexes, p1);
-          this.isPointAdded = true;
+          this._isPointAdded = true;
         }
 
         props.onEdit({
@@ -110,7 +118,7 @@ export class ExtrudeMode extends ModifyMode {
       let { positionIndexes } = editHandle.properties;
 
       const size = this.coordinatesSize(positionIndexes, featureIndex, props.data);
-      positionIndexes = this.isPointAdded
+      positionIndexes = this._isPointAdded
         ? this.nextPositionIndexes(positionIndexes, size)
         : positionIndexes;
       // p1 and p1 are end points for edge
@@ -141,7 +149,7 @@ export class ExtrudeMode extends ModifyMode {
         });
       }
     }
-    this.isPointAdded = false;
+    this._isPointAdded = false;
   }
 
   coordinatesSize(
@@ -170,11 +178,50 @@ export class ExtrudeMode extends ModifyMode {
   }
 
   getBearing(p1: any, p2: any) {
-    const angle = bearing(p1, p2);
+    const angle = turfBearing(p1, p2);
     if (angle < 0) {
       return Math.floor(360 + angle);
     }
     return Math.floor(angle);
+  }
+
+  getSelectedFeaturesAsFeatureCollection(props: ModeProps<FeatureCollection>): FeatureCollection {
+    const { features } = props.data;
+    const selectedFeatures = props.selectedIndexes.map((selectedIndex) => features[selectedIndex]);
+    return {
+      type: 'FeatureCollection',
+      features: selectedFeatures,
+    };
+  }
+
+  getGuides(props: ModeProps<FeatureCollection>): GuideFeatureCollection {
+    const handles = [];
+
+    const selectedGeometry = this.getSelectedFeaturesAsFeatureCollection(props);
+
+    selectedGeometry.features.forEach((feature) => {
+      recursivelyTraverseNestedArrays(feature.geometry.coordinates, [], (coords, prefix) => {
+        let previousCoord: Position = null;
+        coords.forEach((coord: Position, index: number) => {
+          if (previousCoord) {
+            const edgeMidpoint = getIntermediatePosition(coord, previousCoord);
+            const handle = point(edgeMidpoint, {
+              guideType: 'editHandle',
+              editHandleType: 'intermediate',
+              featureIndex: 0,
+              positionIndexes: [...prefix, index],
+            });
+            handles.push(handle);
+          }
+          previousCoord = coord;
+        });
+      });
+    });
+
+    return {
+      type: 'FeatureCollection',
+      features: handles,
+    };
   }
 
   isOrthogonal(
@@ -250,5 +297,23 @@ export class ExtrudeMode extends ModifyMode {
       }
     }
     return p1;
+  }
+
+  updateCursor(event: PointerMoveEvent, props: ModeProps<FeatureCollection>): void {
+    const picks = (event && event.picks) || [];
+    const handlesPicked = getPickedEditHandle(picks);
+    if (handlesPicked) {
+      const selectedEditHandle =
+        handlesPicked.properties.editHandleType === 'intermediate' ? handlesPicked : null;
+      const selectedGeometry = this.getSelectedFeaturesAsFeatureCollection(props);
+      const center = turfCenterOfMass(selectedGeometry);
+      const bearing = turfBearing(center, selectedEditHandle);
+      const cursorState = this.getCursorState(bearing, props);
+      this._cursor = cursorState;
+    } else {
+      this._cursor = null;
+    }
+
+    props.onUpdateCursor(this._cursor);
   }
 }

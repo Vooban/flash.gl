@@ -62,6 +62,29 @@ export class GeoJsonEditMode implements EditMode<FeatureCollection, GuideFeature
     return null;
   }
 
+  getCursorState = (graphicBearing: number, props: ModeProps<FeatureCollection>) => {
+    const getPositiveBearing = (angle) => (angle < 0 ? angle + 180 : angle);
+    const viewBearing = props.modeConfig?.bearing || 0;
+    const bearing = getPositiveBearing(graphicBearing - viewBearing) % 180;
+    switch (Math.round(bearing / (180 / 8))) {
+      case 0:
+      case 1:
+      case 8:
+        return 'ns-resize';
+      case 2:
+      case 3:
+        return 'nesw-resize';
+      case 4:
+      case 5:
+        return 'ew-resize';
+      case 6:
+      case 7:
+        return 'nwse-resize';
+      default:
+        return null;
+    }
+  };
+
   getSelectedFeaturesAsFeatureCollection(props: ModeProps<FeatureCollection>): FeatureCollection {
     const { features } = props.data;
     const selectedFeatures = props.selectedIndexes.map((selectedIndex) => features[selectedIndex]);

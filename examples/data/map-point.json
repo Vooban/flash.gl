@@ -1,0 +1,1864 @@
+{
+  "type": "FeatureCollection",
+  "name": "Beauport_pour_Flash_3.0_V4.0-point",
+  "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BBB",
+        "Text": "C"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.205424529695051, 46.826815447273141, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BBC",
+        "Text": "D"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.204748051644515, 46.827132526601119, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BBD",
+        "Text": "1"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.204582313889802, 46.827083752011447, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BBE",
+        "Text": "2"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.204388050641825, 46.827168101228544, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BBF",
+        "Text": "3"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.204193606048833, 46.827253665741097, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BC0",
+        "Text": "B"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.205318518133765, 46.826757345234164, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BC1",
+        "Text": "A"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.205079043630818, 46.826861244470201, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BC2",
+        "Text": "0"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.204841604054025, 46.826965704611382, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BC3",
+        "Text": "4"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.204000502031477, 46.827339554542114, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BC4",
+        "Text": "5"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.20380727758878, 46.82742329362155, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BC5",
+        "Text": "6"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.20361387719467, 46.8275086617993, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BC6",
+        "Text": "7"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.203419640623025, 46.827593279091587, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BC7",
+        "Text": "8"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.203224625935249, 46.827677576963637, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BC8",
+        "Text": "9"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.20303015304421, 46.827762258018097, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BC9",
+        "Text": "10"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.202836165626323, 46.827846018128845, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BCA",
+        "Text": "11"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.202642823190715, 46.827929853487525, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BCB",
+        "Text": "12"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.202447729230741, 46.828015474412808, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BCC",
+        "Text": "13"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.202253488505235, 46.828099046161604, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BCD",
+        "Text": "14"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.202057039531041, 46.828182190301419, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BCE",
+        "Text": "15"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.201863551813759, 46.828266305545377, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BCF",
+        "Text": "16"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.201668851281255, 46.82835077403093, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BD0",
+        "Text": "17"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.201477105866374, 46.828434128328361, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BD1",
+        "Text": "18"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.201281436275579, 46.828519873939626, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BD2",
+        "Text": "19"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.201090071632279, 46.828604145792461, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BD3",
+        "Text": "20"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.20089372102801, 46.828690094192481, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BD4",
+        "Text": "21"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.200699792565203, 46.828774866893383, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BD5",
+        "Text": "22"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.200507664607557, 46.828860051074258, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BD6",
+        "Text": "23"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.200312927677246, 46.828945241897536, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BD7",
+        "Text": "24"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.200118449812024, 46.829030241879217, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BD8",
+        "Text": "25"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.199923722301961, 46.829115243055341, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BD9",
+        "Text": "26"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.199726057989352, 46.829197212080878, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BDA",
+        "Text": "27"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.199531554753861, 46.829282418131974, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BDB",
+        "Text": "28"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.199337260999869, 46.829366641966018, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BDC",
+        "Text": "29"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.19914271803006, 46.829451910570327, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BDD",
+        "Text": "30"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.198948024785579, 46.829536756930281, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BDE",
+        "Text": "31"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.198756397690133, 46.829621419632254, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BDF",
+        "Text": "32"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.198561516146313, 46.829708158391533, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BE0",
+        "Text": "33"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.198365872225764, 46.829792613717707, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BE1",
+        "Text": "34"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.198172255197719, 46.829876741471161, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BE2",
+        "Text": "35"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.197977738264228, 46.829961533159768, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BE3",
+        "Text": "36"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.197777324539018, 46.830046995124739, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BE4",
+        "Text": "37"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.197580656641094, 46.830129494134923, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BE5",
+        "Text": "38"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.197383900661222, 46.83021435039214, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BE6",
+        "Text": "39"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.197174246624058, 46.830304349830939, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BE7",
+        "Text": "40"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.196978888485546, 46.830389952569455, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BE8",
+        "Text": "41"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.196783973012003, 46.830474355760373, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BE9",
+        "Text": "42"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.196587394666523, 46.830559965255354, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BEA",
+        "Text": "43"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.196391010094572, 46.830645402300959, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BEB",
+        "Text": "44"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.196192941850413, 46.830731452005715, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BEC",
+        "Text": "45"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.195997848414336, 46.830816475683207, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BED",
+        "Text": "46"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.195802077543419, 46.830901871995884, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BEE",
+        "Text": "47"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.195605806580744, 46.830987163054715, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BEF",
+        "Text": "48"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.19541071581186, 46.831072536568584, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BF0",
+        "Text": "49"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.195215645301417, 46.831157495792048, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BF1",
+        "Text": "50"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.195019428150005, 46.83124303741176, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BF2",
+        "Text": "51"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.194823747427634, 46.831328548447857, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BF3",
+        "Text": "52"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.194627180807245, 46.831414532335316, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BF4",
+        "Text": "53"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.194431741387547, 46.831499537436549, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BF5",
+        "Text": "54"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.194236410842237, 46.831584901396837, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BF6",
+        "Text": "55"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.19404051953012, 46.831670538313475, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BF7",
+        "Text": "56"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.193844144237914, 46.831756303776167, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BF8",
+        "Text": "57"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.193649695351041, 46.831842075218511, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BF9",
+        "Text": "58"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.193449893568328, 46.831931612253037, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BFA",
+        "Text": "59"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.193253062162484, 46.832016713728237, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "No bollard",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbText",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "3BFB",
+        "Text": "60"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.193058789535655, 46.832103085850669, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "0",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         4 0",
+        "Linetype": null,
+        "EntityHand": "3D836",
+        "Text": "53-100"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.196119532186216, 46.832511446060607, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "0",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         4 0",
+        "Linetype": null,
+        "EntityHand": "3D85D",
+        "Text": "53-100"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.195893381297651, 46.832610065756356, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "0",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         4 0",
+        "Linetype": null,
+        "EntityHand": "3D884",
+        "Text": "53-100"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.196712825745166, 46.832252730307658, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "0",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         4 0",
+        "Linetype": null,
+        "EntityHand": "3D920",
+        "Text": "53-100"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.197348871393331, 46.836329360404406, -0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "0",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         4 0",
+        "Linetype": null,
+        "EntityHand": "3D947",
+        "Text": "53-100"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.196515672954661, 46.836411190589757, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "0",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         4 0",
+        "Linetype": null,
+        "EntityHand": "3DE27",
+        "Text": "53-100"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.206454520750228, 46.832073585538907, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "0",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         4 0",
+        "Linetype": null,
+        "EntityHand": "3DE4E",
+        "Text": "53-100"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.210241925477661, 46.831110259554848, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "0",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         4 0",
+        "Linetype": null,
+        "EntityHand": "3DE9C",
+        "Text": "53-100"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.199211986307944, 46.830447955533003, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PUI-300-600-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "1         6 0 AnnotativeData {      1      0 }",
+        "Linetype": null,
+        "EntityHand": "4068E",
+        "Text": null
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.199036685344765, 46.829666799257879, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PUI-300-600-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "1         6 0 AnnotativeData {      1      0 }",
+        "Linetype": null,
+        "EntityHand": "4070C",
+        "Text": null
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.198364391732312, 46.830352104707998, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PUI-300-600-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "1         6 0 AnnotativeData {      1      0 }",
+        "Linetype": null,
+        "EntityHand": "40800",
+        "Text": null
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.197257485073564, 46.830834147449814, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PUI-300-600-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "1         6 0 AnnotativeData {      1      0 }",
+        "Linetype": null,
+        "EntityHand": "40926",
+        "Text": null
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.194915931093107, 46.833045882164711, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PUI-300-600-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "1         6 0 AnnotativeData {      1      0 }",
+        "Linetype": null,
+        "EntityHand": "40A22",
+        "Text": null
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.195939302843144, 46.834721920026865, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PUI-300-600-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "1         6 0 AnnotativeData {      1      0 }",
+        "Linetype": null,
+        "EntityHand": "40A4C",
+        "Text": null
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.19700867657177, 46.834489963754692, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PUI-300-600-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "1         6 0 AnnotativeData {      1      0 }",
+        "Linetype": null,
+        "EntityHand": "40A76",
+        "Text": null
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.196875854787265, 46.83434534481345, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PUI-300-600-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "1         6 0 AnnotativeData {      1      0 }",
+        "Linetype": null,
+        "EntityHand": "40AA0",
+        "Text": null
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.197439490419498, 46.834098608340447, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PUI-300-600-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "1         6 0 AnnotativeData {      1      0 }",
+        "Linetype": null,
+        "EntityHand": "40ACA",
+        "Text": null
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.198003026120077, 46.833851767438205, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PUI-300-600-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "1         6 0 AnnotativeData {      1      0 }",
+        "Linetype": null,
+        "EntityHand": "40AF4",
+        "Text": null
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.198566720468918, 46.833605098733045, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PUI-300-600-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "1         6 0 AnnotativeData {      1      0 }",
+        "Linetype": null,
+        "EntityHand": "40B1E",
+        "Text": null
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.198700098270834, 46.833750304686291, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PUI-300-600-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "1         6 0 AnnotativeData {      1      0 }",
+        "Linetype": null,
+        "EntityHand": "40B48",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.198135995952882, 46.833996541413327, 0.000000000000745]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PUI-300-600-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "1         6 0 AnnotativeData {      1      0 }",
+        "Linetype": null,
+        "EntityHand": "40B72",
+        "Text": null
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.197572313506754, 46.834243226446333, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PUI-300-600-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "1         6 0 AnnotativeData {      1      0 }",
+        "Linetype": null,
+        "EntityHand": "40B9C",
+        "Text": null
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.196832389132041, 46.835269676275963, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PUI-300-600-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "1         6 0 AnnotativeData {      1      0 }",
+        "Linetype": null,
+        "EntityHand": "40BC6",
+        "Text": null
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.197289248097036, 46.835763187292685, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PUI-300-600-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "1         6 0 AnnotativeData {      1      0 }",
+        "Linetype": null,
+        "EntityHand": "40BF0",
+        "Text": null
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.197453239692734, 46.835934852804883, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PUI-300-600-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "1         6 0 AnnotativeData {      1      0 }",
+        "Linetype": null,
+        "EntityHand": "40C44",
+        "Text": null
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.197927186228256, 46.835486690657135, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PUI-300-600-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "1         6 0 AnnotativeData {      1      0 }",
+        "Linetype": null,
+        "EntityHand": "40EA2",
+        "Text": null
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.196600893043183, 46.836325003815347, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PUI-300-600-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "1         6 0 AnnotativeData {      1      0 }",
+        "Linetype": null,
+        "EntityHand": "40ECC",
+        "Text": null
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.196947678950451, 46.836314679091437, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PUI-300-600-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "1         6 0 AnnotativeData {      1      0 }",
+        "Linetype": null,
+        "EntityHand": "40EF6",
+        "Text": null
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.196960305299072, 46.836423305276199, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PUI-300-600-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "1         6 0 AnnotativeData {      1      0 }",
+        "Linetype": null,
+        "EntityHand": "40F20",
+        "Text": null
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.197300671654119, 46.836255168366847, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PUI-300-600-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "1         6 0 AnnotativeData {      1      0 }",
+        "Linetype": null,
+        "EntityHand": "40F4A",
+        "Text": null
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.199390121873193, 46.835497751754048, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PUI-300-600-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "1         6 0 AnnotativeData {      1      0 }",
+        "Linetype": null,
+        "EntityHand": "40F74",
+        "Text": null
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.198727978513404, 46.835785750470436, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PUI-300-600-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "1         6 0 AnnotativeData {      1      0 }",
+        "Linetype": null,
+        "EntityHand": "41436",
+        "Text": null
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.200250888154116, 46.832899587283165, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PUI-300-600-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "1         6 0 AnnotativeData {      1      0 }",
+        "Linetype": null,
+        "EntityHand": "41508",
+        "Text": null
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.198959486783053, 46.831805157388054, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PUI-300-600-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "1         6 0 AnnotativeData {      1      0 }",
+        "Linetype": null,
+        "EntityHand": "419CA",
+        "Text": null
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.206432704092293, 46.832301827408479, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PUI-300-600-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "1         6 0 AnnotativeData {      1      0 }",
+        "Linetype": null,
+        "EntityHand": "41A1E",
+        "Text": null
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.207209471398542, 46.831699464616186, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PUI-300-600-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "1         6 0 AnnotativeData {      1      0 }",
+        "Linetype": null,
+        "EntityHand": "41A48",
+        "Text": null
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.207596571633189, 46.831504234935529, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PUI-300-600-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "1         6 0 AnnotativeData {      1      0 }",
+        "Linetype": null,
+        "EntityHand": "41A72",
+        "Text": null
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.207941815347326, 46.831354028784652, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PUI-300-600-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "1         6 0 AnnotativeData {      1      0 }",
+        "Linetype": null,
+        "EntityHand": "41A9C",
+        "Text": null
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.20830047279081, 46.831208254759936, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PUI-300-600-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "1         6 0 AnnotativeData {      1      0 }",
+        "Linetype": null,
+        "EntityHand": "42084",
+        "Text": null
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.203004382984332, 46.829414939415052, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PUI-300-600-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "1         6 0 AnnotativeData {      1      0 }",
+        "Linetype": null,
+        "EntityHand": "42102",
+        "Text": null
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.202245732582483, 46.828858576619453, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PUI-300-600-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "1         6 0 AnnotativeData {      1      0 }",
+        "Linetype": null,
+        "EntityHand": "4212C",
+        "Text": null
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.203631287572364, 46.828258431072399, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PUI-300-600-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "1         6 0 AnnotativeData {      1      0 }",
+        "Linetype": null,
+        "EntityHand": "42156",
+        "Text": null
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.203261757298961, 46.827861549040591, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PUI-300-600-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "1         6 0 AnnotativeData {      1      0 }",
+        "Linetype": null,
+        "EntityHand": "42180",
+        "Text": null
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.201901863525492, 46.828451128442175, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PUI-300-600-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "1         6 0 AnnotativeData {      1      0 }",
+        "Linetype": null,
+        "EntityHand": "42228",
+        "Text": null
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.201156446740541, 46.830721343659299, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PUI-300-600-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "1         6 0 AnnotativeData {      1      0 }",
+        "Linetype": null,
+        "EntityHand": "4234E",
+        "Text": null
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.199915632985238, 46.830960295678004, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PUI-300-600-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "1         6 0 AnnotativeData {      1      0 }",
+        "Linetype": null,
+        "EntityHand": "42474",
+        "Text": null
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.199316246288348, 46.83157662639038, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "43F00",
+        "Text": "53-100"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.196258349627726, 46.834577804427283, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "43F27",
+        "Text": "53-100"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.196846802417753, 46.834320308188964, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "43F4E",
+        "Text": "53-100"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.197021894845193, 46.834510416474025, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "43F75",
+        "Text": "53-100"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.196433446637513, 46.834767914167053, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "43F9C",
+        "Text": "53-100"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.196695603998535, 46.835052496548222, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "43FEA",
+        "Text": "53-100"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.1968578579759, 46.835252830927494, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "44011",
+        "Text": "53-100"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.197314597469273, 46.835746393704675, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "44038",
+        "Text": "53-100"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.197221059273247, 46.834423291096918, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "4405F",
+        "Text": "53-100"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.197054014826932, 46.834230190619571, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "44086",
+        "Text": "53-100"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.197584509343557, 46.834263907126839, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "440AD",
+        "Text": "53-100"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.198148398715531, 46.834019060548108, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "440D4",
+        "Text": "53-100"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.198713313141397, 46.833770759310624, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "440FB",
+        "Text": "53-100"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.197409547095859, 46.834073791505169, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "44122",
+        "Text": "53-100"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.19797534277582, 46.833826424168215, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "44149",
+        "Text": "53-100"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.19853767235675, 46.833580055777375, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "44170",
+        "Text": "53-100"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.198713313141397, 46.833770759310624, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "4457D",
+        "Text": "53-100"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.198424025968052, 46.830320870955212, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "445A4",
+        "Text": "53-100"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.198228305062884, 46.830109456359779, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "445F2",
+        "Text": "53-100"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.197297933919884, 46.830810916102138, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "446B5",
+        "Text": "53-100"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.203582084067449, 46.828248808811793, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "446DC",
+        "Text": "53-100"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.202216829248471, 46.828833397241382, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "44703",
+        "Text": "53-100"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.202071506109363, 46.829159254159308, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "4472A",
+        "Text": "53-100"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.202334347562669, 46.829530451168104, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "44751",
+        "Text": "53-100"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.202490286278362, 46.829630703121069, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "4479F",
+        "Text": "53-100"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.202741775932594, 46.829745274928079, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "4483B",
+        "Text": "53-100"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.204472726814004, 46.829009409939964, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "44A0F",
+        "Text": "53-100"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.209804536849802, 46.830482408732344, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "44A36",
+        "Text": "53-100"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.209631826104641, 46.830662867358591, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "44A5D",
+        "Text": "53-100"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.209929829039808, 46.830655936436521, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "44A84",
+        "Text": "53-100"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.209823598383522, 46.830929608251509, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "44C58",
+        "Text": "53-100"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.208655673872286, 46.831073068328834, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "44C7F",
+        "Text": "53-100"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.207707482085439, 46.831473425951351, 0.0] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "44E2C",
+        "Text": "53-100"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.200279507318342, 46.833746433821439, 5.51]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "44E53",
+        "Text": "53-100"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.199155109970576, 46.834236556398636, 5.462]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "44E7A",
+        "Text": "53-100"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.197664476812065, 46.834883953137833, 5.701]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "44EA1",
+        "Text": "53-100"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.196864476140618, 46.835219955795267, 5.364]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "44EC8",
+        "Text": "53-100"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.19861779453241, 46.832827497297131, 5.331]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "44EEF",
+        "Text": "53-100"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.19727661997139, 46.833404794757321, 5.299]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "44F16",
+        "Text": "53-100"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.197065471865642, 46.832410011822923, 5.271]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "44F3D",
+        "Text": "53-100"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.196391161479397, 46.831055142582954, 5.309]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "R-E-EGO-PLU-REG-TXT",
+        "SubClasses": "AcDbEntity:AcDbText:AcDbAttributeDefinition",
+        "ExtendedEn": "AnnotativeData {      1      0 }      1         1 0",
+        "Linetype": null,
+        "EntityHand": "44F64",
+        "Text": "53-100"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.195309331949446, 46.834229260306081, 5.59]
+      }
+    }
+  ]
+}

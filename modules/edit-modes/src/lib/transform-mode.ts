@@ -4,12 +4,13 @@ import { FeatureCollection } from '../geojson-types';
 import { TranslateMode } from './translate-mode';
 import { ScaleMode } from './scale-mode';
 import { RotateMode } from './rotate-mode';
+import { ExtrudeMode } from './extrude-mode';
 
 import { CompositeMode } from './composite-mode';
 
 export class TransformMode extends CompositeMode {
   constructor() {
-    super([new TranslateMode(), new ScaleMode(), new RotateMode()]);
+    super([new TranslateMode(), new ScaleMode(), new RotateMode(), new ExtrudeMode()]);
   }
 
   handlePointerMove(event: PointerMoveEvent, props: ModeProps<FeatureCollection>) {

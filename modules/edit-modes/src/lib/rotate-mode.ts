@@ -1,12 +1,15 @@
 /* eslint-disable prettier/prettier */
 import bbox from '@turf/bbox';
-import turfCentroid from '@turf/centroid';
+// import turfCentroid from '@turf/centroid';
+import turfCenterOfMass from '@turf/center-of-mass';
+// import turfCenter from '@turf/center';
 import turfBearing from '@turf/bearing';
 import bboxPolygon from '@turf/bbox-polygon';
-import turfDistance from '@turf/distance';
-import { coordEach } from '@turf/meta';
+// import turfDistance from '@turf/distance';
+// import { coordEach } from '@turf/meta';
 import { getGeom } from '@turf/invariant';
-import { point, featureCollection, lineString } from '@turf/helpers';
+// import { point, featureCollection, lineString } from '@turf/helpers';
+import { Feature, featureCollection, Polygon } from '@turf/helpers';
 import turfTransformRotate from '@turf/transform-rotate';
 import polygonToLine from '@turf/polygon-to-line';
 import {
@@ -20,13 +23,15 @@ import {
 } from '../types';
 import { getPickedEditHandle } from '../utils';
 import { FeatureCollection, Position } from '../geojson-types';
-import { GeoJsonEditMode, GeoJsonEditAction, getIntermediatePosition } from './geojson-edit-mode';
+// import { GeoJsonEditMode, GeoJsonEditAction, getIntermediatePosition } from './geojson-edit-mode';
+import { GeoJsonEditMode, GeoJsonEditAction } from './geojson-edit-mode';
 import { ImmutableFeatureCollection } from './immutable-feature-collection';
 
 export class RotateMode extends GeoJsonEditMode {
   _selectedEditHandle: EditHandleFeature | null | undefined;
   _geometryBeingRotated: FeatureCollection | null | undefined;
   _isRotating = false;
+  _bearing = 0;
 
   _isSinglePointGeometrySelected = (geometry: FeatureCollection | null | undefined): boolean => {
     const { features } = geometry || {};
@@ -38,11 +43,18 @@ export class RotateMode extends GeoJsonEditMode {
     return false;
   };
 
+  _isSingleGeometrySelected = (geometry: FeatureCollection | null | undefined): boolean => {
+    const { features } = geometry || {};
+    return Array.isArray(features) && features.length === 1;
+  };
+
   getIsRotating = () => this._isRotating;
 
   getGuides(props: ModeProps<FeatureCollection>): GuideFeatureCollection {
     const selectedGeometry =
       this._geometryBeingRotated || this.getSelectedFeaturesAsFeatureCollection(props);
+
+    this._bearing = (selectedGeometry.features.length && props.modeConfig.bearing) || 0;
 
     if (this._isSinglePointGeometrySelected(selectedGeometry)) {
       return { type: 'FeatureCollection', features: [] };
@@ -50,50 +62,76 @@ export class RotateMode extends GeoJsonEditMode {
 
     if (this._isRotating) {
       // Display rotate pivot
-      return featureCollection([turfCentroid(selectedGeometry)]) as GuideFeatureCollection;
+      return featureCollection([turfCenterOfMass(selectedGeometry)]) as GuideFeatureCollection;
     }
 
-    const boundingBox = bboxPolygon(bbox(selectedGeometry));
+    let boundingBox = bboxPolygon(bbox(selectedGeometry));
 
-    let previousCoord = null;
-    let topEdgeMidpointCoords = null;
-    let longestEdgeLength = 0;
+    if (this._isSingleGeometrySelected(selectedGeometry)) {
+      boundingBox = selectedGeometry.features[0] as Feature<Polygon>;
+    } else if (this._bearing) {
+      const geometry = {
+        ...selectedGeometry,
+        features: selectedGeometry.features.map((f) => {
+          const pivot = turfCenterOfMass(f.geometry);
+          return { ...f, geometry: turfTransformRotate(f.geometry, -this._bearing, { pivot }) };
+        }),
+      };
+      const box = bboxPolygon(bbox(geometry));
+      const centroid = turfCenterOfMass(geometry);
+      boundingBox = turfTransformRotate(box, this._bearing, { pivot: centroid });
+    }
 
-    coordEach(boundingBox, (coord) => {
-      if (previousCoord) {
-        // @ts-ignore
-        const edgeMidpoint = getIntermediatePosition(coord, previousCoord);
-        if (!topEdgeMidpointCoords || edgeMidpoint[1] > topEdgeMidpointCoords[1]) {
-          // Get the top edge midpoint of the enveloping box
-          topEdgeMidpointCoords = edgeMidpoint;
-        }
-        // Get the length of the longest edge of the enveloping box
-        const edgeDistance = turfDistance(coord, previousCoord);
-        longestEdgeLength = Math.max(longestEdgeLength, edgeDistance);
-      }
-      previousCoord = coord;
-    });
+    // let previousCoord = null;
+    // let topEdgeMidpointCoords = null;
+    // let longestEdgeLength = 0;
+
+    // coordEach(boundingBox, (coord) => {
+    //   if (previousCoord) {
+    //     // @ts-ignore
+    //     const edgeMidpoint = getIntermediatePosition(coord, previousCoord);
+    //     if (!topEdgeMidpointCoords || edgeMidpoint[1] > topEdgeMidpointCoords[1]) {
+    //       // Get the top edge midpoint of the enveloping box
+    //       topEdgeMidpointCoords = edgeMidpoint;
+    //     }
+    //     // Get the length of the longest edge of the enveloping box
+    //     const edgeDistance = turfDistance(coord, previousCoord);
+    //     longestEdgeLength = Math.max(longestEdgeLength, edgeDistance);
+    //   }
+    //   previousCoord = coord;
+    // });
 
     // Scale the length of the line between the rotate handler and the enveloping box
     // relative to the length of the longest edge of the enveloping box
-    const rotateHandleCoords = topEdgeMidpointCoords && [
-      topEdgeMidpointCoords[0],
-      topEdgeMidpointCoords[1] + longestEdgeLength / 1000,
-    ];
+    // const rotateHandleCoords = topEdgeMidpointCoords && [
+    //   topEdgeMidpointCoords[0],
+    //   topEdgeMidpointCoords[1] + longestEdgeLength / 1000,
+    // ];
 
-    const lineFromEnvelopeToRotateHandle = lineString([topEdgeMidpointCoords, rotateHandleCoords]);
-    const rotateHandle = point(rotateHandleCoords, {
+    // let lineFromEnvelopeToRotateHandle = lineString([topEdgeMidpointCoords, rotateHandleCoords]);
+    // if (this._bearing) {
+    //   lineFromEnvelopeToRotateHandle = { ...lineFromEnvelopeToRotateHandle, geometry: turfTransformRotate(lineFromEnvelopeToRotateHandle.geometry, this._bearing)};
+    // }
+    const centerPiece = turfCenterOfMass(boundingBox.geometry);
+    centerPiece.properties = {
       guideType: 'editHandle',
       editHandleType: 'rotate',
-    });
+    };
+
+    // let rotateHandle = point(centerPiece.geometry.coordinates[1], {
+    //   guideType: 'editHandle',
+    //   editHandleType: 'rotate',
+    // });
+    // console.log(rotateHandle)
     // @ts-ignore
     return featureCollection([
       // @ts-ignore
       polygonToLine(boundingBox),
       // @ts-ignore
-      rotateHandle,
+      // rotateHandle,
+      centerPiece,
       // @ts-ignore
-      lineFromEnvelopeToRotateHandle,
+      // lineFromEnvelopeToRotateHandle,
     ]);
   }
 
@@ -173,8 +211,12 @@ export class RotateMode extends GeoJsonEditMode {
       return null;
     }
 
-    const centroid = turfCentroid(this._geometryBeingRotated);
-    const angle = getRotationAngle(centroid, startDragPoint, currentPoint);
+    const centroid = turfCenterOfMass(this._geometryBeingRotated);
+    const angle = getRotationAngle(
+      centroid.geometry.coordinates as Position,
+      startDragPoint,
+      currentPoint
+    );
     // @ts-ignore
     const rotatedFeatures: FeatureCollection = turfTransformRotate(
       // @ts-ignore

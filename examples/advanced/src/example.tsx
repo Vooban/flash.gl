@@ -4,9 +4,12 @@ import window from 'global/window';
 import * as React from 'react';
 import DeckGL from '@deck.gl/react';
 import { MapView, MapController, RGBAColor } from '@deck.gl/core';
+// import { GeoJsonLayer } from '@deck.gl/layers';
+// import {MVTLayer} from '@deck.gl/geo-layers';
 import { StaticMap } from 'react-map-gl';
 import GL from '@luma.gl/constants';
 import circle from '@turf/circle';
+// import { loadArcGISModules } from '@deck.gl/arcgis';
 
 import {
   EditableGeoJsonLayer,
@@ -49,6 +52,7 @@ import {
 } from 'nebula.gl';
 
 import sampleGeoJson from '../../data/sample-geojson.json';
+// import geojson from '../../data/map-line.json';
 
 import iconSheet from '../../data/edit-handles.png';
 
@@ -75,14 +79,25 @@ const styles = {
 };
 
 const initialViewport = {
-  bearing: 0,
+  bearing: -32,
   height: 0,
-  latitude: 37.76,
-  longitude: -122.44,
+  longitude: -71.20545065336731,
+  latitude: 46.83094393068582,
   pitch: 0,
   width: 0,
-  zoom: 11,
+  zoom: 14,
 };
+
+// loadArcGISModules(['esri/layers/VectorTileLayer'], ({DeckLayer, modules}) => {
+//   const [VectorTileLayer] = modules;
+//   const layer = new DeckLayer({
+//     'deck.layers': [
+//       new ScatterplotLayer({
+//         data:
+//       })
+//     ]
+//   })
+// })
 
 const ALL_MODES: any = [
   {
@@ -226,6 +241,7 @@ export default class Example extends React.Component<
     editHandleType: string;
     selectionTool?: string;
     showGeoJson: boolean;
+    enableBearingWatch: boolean;
     pathMarkerLayer: boolean;
     featureMenu?: {
       index: number;
@@ -248,6 +264,7 @@ export default class Example extends React.Component<
       selectionTool: null,
       showGeoJson: false,
       pathMarkerLayer: false,
+      enableBearingWatch: false,
       featureMenu: null,
     };
   }
@@ -561,7 +578,7 @@ export default class Example extends React.Component<
     return (
       <div key="snap">
         <ToolboxRow>
-          <ToolboxTitle>Enable snapping</ToolboxTitle>
+          <ToolboxTitle>Enable Graphic snapping</ToolboxTitle>
           <ToolboxControl>
             <input
               type="checkbox"
@@ -783,6 +800,18 @@ export default class Example extends React.Component<
               Use PathMarkerLayer
             </ToolboxCheckbox>
           </ToolboxControl>
+
+          <ToolboxControl>
+            <ToolboxCheckbox
+              type="checkbox"
+              checked={Boolean(this.state.enableBearingWatch)}
+              onChange={() => {
+                this.setState({ enableBearingWatch: !this.state.enableBearingWatch });
+              }}
+            >
+              Enable Bearing Watch
+            </ToolboxCheckbox>
+          </ToolboxControl>
         </ToolboxRow>
 
         <ToolboxRow>
@@ -826,10 +855,15 @@ export default class Example extends React.Component<
     );
   }
 
+  // FLASH: it renders mabox style with beauport site
   renderStaticMap(viewport: Record<string, any>) {
     return (
       // @ts-ignore
-      <StaticMap {...viewport} mapStyle={'mapbox://styles/mapbox/dark-v10'} />
+      <StaticMap
+        {...viewport}
+        reuseMap
+        mapStyle={'mapbox://styles/jwallet/ckzswif5d001614k5k3no9qe9'}
+      />
     );
   }
 
@@ -1005,6 +1039,33 @@ export default class Example extends React.Component<
       });
     }
 
+    if (this.state.enableBearingWatch) {
+      modeConfig = { ...modeConfig, bearing: this.state.viewport.bearing };
+    }
+
+    // FLASH: it renders features
+    // const featureLayer = new GeoJsonLayer({
+    //   // id: 'geojson',
+    //   // data: geojson,
+    //   pickable:false,
+    //   lineWidthScale: 1,
+    //   lineWidthMinPixels: 2,
+    //   getFillColor: [160, 160, 160, 160],
+    //   getPointRadius: 1,
+    //   getLineWidth: 1,
+    //   getElevation: 30,
+    //   filled: true,
+    //   extruded: true,
+    //   stroked: false,
+    // });
+
+    // FLASH: it renders maptiler
+    // const maptilerTile = new MVTLayer({
+    //   // data: `https://api.maptiler.com/tiles/57b1bd3d-8c10-4b05-abf1-3ee9bd575ab8/{z}/{x}/{y}.pbf?key=VrAPPlFOtlY6pV1uztbE`,
+    //   minZoom: 0,
+    //   maxZoom: 23,
+    // });
+
     const editableGeoJsonLayer = new EditableGeoJsonLayer({
       id: 'geojson',
       data: testFeatures,
@@ -1099,7 +1160,6 @@ export default class Example extends React.Component<
             });
           },
           layerIds: ['geojson'],
-
           getTentativeFillColor: () => [255, 0, 255, 100],
           getTentativeLineColor: () => [0, 0, 255, 255],
           lineWidthMinPixels: 3,
@@ -1115,6 +1175,7 @@ export default class Example extends React.Component<
         <DeckGL
           viewState={viewport}
           getCursor={editableGeoJsonLayer.getCursor.bind(editableGeoJsonLayer)}
+          // layers={[...layers, featureLayer, maptilerTile]}
           layers={layers}
           height="100%"
           width="100%"
@@ -1129,7 +1190,11 @@ export default class Example extends React.Component<
             }),
           ]}
           onClick={this._onLayerClick}
-          onViewStateChange={({ viewState }) => this.setState({ viewport: viewState })}
+          onViewStateChange={({ viewState }) => {
+            console.log(viewState);
+            return this.setState({ viewport: viewState });
+          }}
+          controller={false}
         >
           {this.renderStaticMap(viewport)}
         </DeckGL>
@@ -1167,3 +1232,7 @@ function getPositionCount(geometry): number {
       throw Error(`Unknown geometry type: ${type}`);
   }
 }
+
+// https://epsg.io/transform#s_srs=3857&t_srs=4326&x=-7925304.6476058&y=5914462.6423127
+// https://mygeodata.cloud/conversion#
+// https://account.mapbox.com/
