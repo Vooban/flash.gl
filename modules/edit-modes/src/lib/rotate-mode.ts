@@ -5,11 +5,12 @@ import turfCenterOfMass from '@turf/center-of-mass';
 // import turfCenter from '@turf/center';
 import turfBearing from '@turf/bearing';
 import bboxPolygon from '@turf/bbox-polygon';
-// import turfDistance from '@turf/distance';
-// import { coordEach } from '@turf/meta';
+import turfDistance from '@turf/distance';
+import turfLineSlice from '@turf/line-slice';
+import { coordEach } from '@turf/meta';
 import { getGeom } from '@turf/invariant';
 // import { point, featureCollection, lineString } from '@turf/helpers';
-import { Feature, featureCollection, Polygon } from '@turf/helpers';
+import { point, lineString, Feature, featureCollection, Polygon } from '@turf/helpers';
 import turfTransformRotate from '@turf/transform-rotate';
 import polygonToLine from '@turf/polygon-to-line';
 import {
@@ -23,8 +24,8 @@ import {
 } from '../types';
 import { getPickedEditHandle } from '../utils';
 import { FeatureCollection, Position } from '../geojson-types';
-// import { GeoJsonEditMode, GeoJsonEditAction, getIntermediatePosition } from './geojson-edit-mode';
-import { GeoJsonEditMode, GeoJsonEditAction } from './geojson-edit-mode';
+import { GeoJsonEditMode, GeoJsonEditAction, getIntermediatePosition } from './geojson-edit-mode';
+// import { GeoJsonEditMode, GeoJsonEditAction } from './geojson-edit-mode';
 import { ImmutableFeatureCollection } from './immutable-feature-collection';
 
 export class RotateMode extends GeoJsonEditMode {
@@ -67,9 +68,10 @@ export class RotateMode extends GeoJsonEditMode {
 
     let boundingBox = bboxPolygon(bbox(selectedGeometry));
 
-    if (this._isSingleGeometrySelected(selectedGeometry)) {
-      boundingBox = selectedGeometry.features[0] as Feature<Polygon>;
-    } else if (this._bearing) {
+    // if (this._isSingleGeometrySelected(selectedGeometry)) {
+    // boundingBox = selectedGeometry.features[0] as Feature<Polygon>;
+    // } else
+    if (this._bearing) {
       const geometry = {
         ...selectedGeometry,
         features: selectedGeometry.features.map((f) => {
@@ -82,58 +84,61 @@ export class RotateMode extends GeoJsonEditMode {
       boundingBox = turfTransformRotate(box, this._bearing, { pivot: centroid });
     }
 
-    // let previousCoord = null;
-    // let topEdgeMidpointCoords = null;
-    // let longestEdgeLength = 0;
+    const { rotateHandle, rotateLine } = this._getRotateHandlers(boundingBox);
 
-    // coordEach(boundingBox, (coord) => {
-    //   if (previousCoord) {
-    //     // @ts-ignore
-    //     const edgeMidpoint = getIntermediatePosition(coord, previousCoord);
-    //     if (!topEdgeMidpointCoords || edgeMidpoint[1] > topEdgeMidpointCoords[1]) {
-    //       // Get the top edge midpoint of the enveloping box
-    //       topEdgeMidpointCoords = edgeMidpoint;
-    //     }
-    //     // Get the length of the longest edge of the enveloping box
-    //     const edgeDistance = turfDistance(coord, previousCoord);
-    //     longestEdgeLength = Math.max(longestEdgeLength, edgeDistance);
-    //   }
-    //   previousCoord = coord;
-    // });
-
-    // Scale the length of the line between the rotate handler and the enveloping box
-    // relative to the length of the longest edge of the enveloping box
-    // const rotateHandleCoords = topEdgeMidpointCoords && [
-    //   topEdgeMidpointCoords[0],
-    //   topEdgeMidpointCoords[1] + longestEdgeLength / 1000,
-    // ];
-
-    // let lineFromEnvelopeToRotateHandle = lineString([topEdgeMidpointCoords, rotateHandleCoords]);
-    // if (this._bearing) {
-    //   lineFromEnvelopeToRotateHandle = { ...lineFromEnvelopeToRotateHandle, geometry: turfTransformRotate(lineFromEnvelopeToRotateHandle.geometry, this._bearing)};
-    // }
-    const centerPiece = turfCenterOfMass(boundingBox.geometry);
-    centerPiece.properties = {
-      guideType: 'editHandle',
-      editHandleType: 'rotate',
-    };
-
-    // let rotateHandle = point(centerPiece.geometry.coordinates[1], {
-    //   guideType: 'editHandle',
-    //   editHandleType: 'rotate',
-    // });
-    // console.log(rotateHandle)
     // @ts-ignore
     return featureCollection([
       // @ts-ignore
       polygonToLine(boundingBox),
       // @ts-ignore
-      // rotateHandle,
-      centerPiece,
+      rotateHandle,
       // @ts-ignore
-      // lineFromEnvelopeToRotateHandle,
+      rotateLine,
     ]);
   }
+
+  _getRotateHandlers = (boundingBox: Feature<Polygon>) => {
+    let topEdgeMidpointCoords = null;
+    let topEdgeCoords = [];
+    let previousCoord = null;
+    let longestEdgeLength = 0;
+
+    coordEach(boundingBox, (coord) => {
+      if (previousCoord) {
+        // @ts-ignore
+        const edgeMidpoint = getIntermediatePosition(coord, previousCoord);
+        if (!topEdgeMidpointCoords || edgeMidpoint[1] > topEdgeMidpointCoords[1]) {
+          // Get the top edge midpoint of the enveloping box
+          topEdgeMidpointCoords = edgeMidpoint;
+          topEdgeCoords = [coord, previousCoord];
+        }
+        // Get the length of the longest edge of the enveloping box
+        const edgeDistance = turfDistance(coord, previousCoord);
+        longestEdgeLength = Math.max(longestEdgeLength, edgeDistance);
+      }
+      previousCoord = coord;
+    });
+
+    const topEdgePerpendicular = turfTransformRotate(lineString(topEdgeCoords), -90, {
+      pivot: topEdgeMidpointCoords,
+    });
+    const rotateLineLength = longestEdgeLength / 1000;
+    const rotateLine = turfLineSlice(
+      topEdgeMidpointCoords,
+      [topEdgeMidpointCoords[0], topEdgeMidpointCoords[1] + rotateLineLength],
+      topEdgePerpendicular
+    );
+
+    let rotateHandle = point(rotateLine.geometry.coordinates[1], {
+      guideType: 'editHandle',
+      editHandleType: 'rotate',
+    });
+
+    return {
+      rotateHandle,
+      rotateLine: rotateLine,
+    };
+  };
 
   handleDragging(event: DraggingEvent, props: ModeProps<FeatureCollection>) {
     if (!this._isRotating) {

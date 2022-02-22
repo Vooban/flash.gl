@@ -4,7 +4,7 @@ import turfCenterOfMass from '@turf/center-of-mass';
 import turfBearing from '@turf/bearing';
 import turfTransformRotate from '@turf/transform-rotate';
 import bboxPolygon from '@turf/bbox-polygon';
-import { point, featureCollection, Feature, Polygon } from '@turf/helpers';
+import { point, featureCollection, Feature, Point } from '@turf/helpers';
 import polygonToLine from '@turf/polygon-to-line';
 import { coordEach } from '@turf/meta';
 import turfDistance from '@turf/distance';
@@ -21,13 +21,13 @@ import {
   GuideFeatureCollection,
 } from '../types';
 import { getPickedEditHandle } from '../utils';
-import { GeoJsonEditMode } from './geojson-edit-mode';
+import { GeoJsonEditMode, getIntermediatePosition } from './geojson-edit-mode';
 import { ImmutableFeatureCollection } from './immutable-feature-collection';
 
 export class ScaleMode extends GeoJsonEditMode {
   _geometryBeingScaled: FeatureCollection | null | undefined;
   _selectedEditHandle: EditHandleFeature | null | undefined;
-  _cornerGuidePoints: Array<EditHandleFeature>;
+  _guidePoints: Array<EditHandleFeature>;
   _cursor: string | null | undefined;
   _isScaling = false;
   _bearing = 0;
@@ -49,17 +49,19 @@ export class ScaleMode extends GeoJsonEditMode {
 
   _getOppositeScaleHandle = (selectedHandle: EditHandleFeature) => {
     const selectedHandleIndex =
-      selectedHandle &&
-      selectedHandle.properties &&
-      Array.isArray(selectedHandle.properties.positionIndexes) &&
+      Array.isArray(selectedHandle?.properties?.positionIndexes) &&
       selectedHandle.properties.positionIndexes[0];
 
     if (typeof selectedHandleIndex !== 'number') {
       return null;
     }
-    const guidePointCount = this._cornerGuidePoints.length;
+    const points = this._guidePoints.filter(
+      (pt) => selectedHandle.properties.shape === pt.properties.shape
+    );
+    const guidePointCount = points.length;
+    console.log(selectedHandle, points, this._guidePoints);
     const oppositeIndex = (selectedHandleIndex + guidePointCount / 2) % guidePointCount;
-    return this._cornerGuidePoints.find((p) => {
+    return points.find((p) => {
       if (!Array.isArray(p.properties.positionIndexes)) {
         return false;
       }
@@ -152,6 +154,8 @@ export class ScaleMode extends GeoJsonEditMode {
       return;
     }
 
+    console.log(event);
+
     props.onUpdateCursor(this._cursor);
 
     const scaleAction = this.getScaleAction(
@@ -190,7 +194,7 @@ export class ScaleMode extends GeoJsonEditMode {
   }
 
   getGuides(props: ModeProps<FeatureCollection>): GuideFeatureCollection {
-    this._cornerGuidePoints = [];
+    this._guidePoints = [];
     const selectedGeometry = this.getSelectedFeaturesAsFeatureCollection(props);
 
     this._bearing = (selectedGeometry.features.length && props.modeConfig.bearing) || 0;
@@ -202,9 +206,10 @@ export class ScaleMode extends GeoJsonEditMode {
 
     let boundingBox = bboxPolygon(bbox(selectedGeometry));
 
-    if (this._isSingleGeometrySelected(selectedGeometry)) {
-      boundingBox = selectedGeometry.features[0] as Feature<Polygon>;
-    } else if (this._bearing) {
+    // if (this._isSingleGeometrySelected(selectedGeometry)) {
+    //   boundingBox = selectedGeometry.features[0] as Feature<Polygon>;
+    // } else
+    if (this._bearing) {
       const geometry = {
         ...selectedGeometry,
         features: selectedGeometry.features.map((f) => {
@@ -218,24 +223,46 @@ export class ScaleMode extends GeoJsonEditMode {
     }
 
     boundingBox.properties.mode = 'scale';
-    const cornerGuidePoints = [];
+    const guidePoints = [];
 
+    let previousCoord = null;
     coordEach(boundingBox, (coord, coordIndex) => {
-      if (coordIndex < 4) {
+      if (
+        !guidePoints.some((pt: Feature<Point>) =>
+          samePosition(pt.geometry.coordinates as Position, coord as Position)
+        )
+      ) {
         // Get corner midpoint guides from the enveloping box
         const cornerPoint = point(coord, {
           guideType: 'editHandle',
           editHandleType: 'scale',
           positionIndexes: [coordIndex],
+          shape: 'corner',
         });
-        cornerGuidePoints.push(cornerPoint);
+        guidePoints.push(cornerPoint);
       }
+      if (previousCoord) {
+        console.log(previousCoord, coord);
+        const axeMidCoord = getIntermediatePosition(coord as Position, previousCoord as Position);
+        const axeMidPoint = point(axeMidCoord, {
+          guideType: 'editHandle',
+          editHandleType: 'scale',
+          positionIndexes: [coordIndex - 1],
+          shape: 'axe',
+        });
+        guidePoints.push(axeMidPoint);
+      }
+      previousCoord = coord;
     });
 
-    this._cornerGuidePoints = cornerGuidePoints;
+    this._guidePoints = guidePoints;
     // @ts-ignore
-    return featureCollection([polygonToLine(boundingBox), ...this._cornerGuidePoints]);
+    return featureCollection([polygonToLine(boundingBox), ...this._guidePoints]);
   }
+}
+
+function samePosition(coord1: Position, coord2: Position) {
+  return coord1[0] === coord2[0] && coord1[1] === coord2[1];
 }
 
 function getScaleFactor(centroid: Position, startDragPoint: Position, currentPoint: Position) {
