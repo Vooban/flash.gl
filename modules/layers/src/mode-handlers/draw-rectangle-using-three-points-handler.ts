@@ -5,6 +5,9 @@ import { EditAction } from './mode-handler';
 import { ThreeClickPolygonHandler } from './three-click-polygon-handler';
 
 // TODO edit-modes: delete handlers once EditMode fully implemented
+/**
+ * @deprecated use edit-modes
+ */
 export class DrawRectangleUsingThreePointsHandler extends ThreeClickPolygonHandler {
   handlePointerMove(
     event: PointerMoveEvent

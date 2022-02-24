@@ -15,6 +15,9 @@ import {
 } from './mode-handler';
 
 // TODO edit-modes: delete handlers once EditMode fully implemented
+/**
+ * @deprecated use edit-modes
+ */
 export class Draw90DegreePolygonHandler extends ModeHandler {
   getEditHandles(picks?: Array<Record<string, any>>, groundCoords?: Position): EditHandle[] {
     let handles = super.getEditHandles(picks, groundCoords);

@@ -6,6 +6,9 @@ import { PointerMoveEvent, StartDraggingEvent, StopDraggingEvent } from '../even
 import { EditAction, ModeHandler } from './mode-handler';
 
 // TODO edit-modes: delete handlers once EditMode fully implemented
+/**
+ * @deprecated use edit-modes
+ */
 export class ScaleHandler extends ModeHandler {
   _isScalable: boolean;
   _geometryBeingScaled: FeatureCollection | null | undefined;

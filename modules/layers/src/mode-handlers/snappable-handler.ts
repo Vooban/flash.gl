@@ -11,6 +11,9 @@ import {
 type HandlePicks = { pickedHandle?: EditHandle; potentialSnapHandle?: EditHandle };
 
 // TODO edit-modes: delete handlers once EditMode fully implemented
+/**
+ * @deprecated use edit-modes
+ */
 export class SnappableHandler extends ModeHandler {
   _handler: ModeHandler;
   _editHandlePicks: HandlePicks | null | undefined;

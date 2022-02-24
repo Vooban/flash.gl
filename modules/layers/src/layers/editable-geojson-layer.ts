@@ -4,31 +4,31 @@ import { RGBAColor } from '@deck.gl/core';
 import { GeoJsonLayer, ScatterplotLayer, IconLayer, TextLayer } from '@deck.gl/layers';
 
 import {
-  ViewMode,
-  ModifyMode,
-  TranslateMode,
-  ScaleMode,
-  RotateMode,
-  DuplicateMode,
-  SplitPolygonMode,
-  ExtrudeMode,
-  ElevationMode,
-  DrawPointMode,
-  DrawLineStringMode,
+  // ViewMode,
+  // ModifyMode,
+  // TranslateMode,
+  // ScaleMode,
+  // RotateMode,
+  // DuplicateMode,
+  // SplitPolygonMode,
+  // ExtrudeMode,
+  // ElevationMode,
+  // DrawPointMode,
+  // DrawLineStringMode,
   DrawPolygonMode,
-  DrawRectangleMode,
-  DrawSquareMode,
-  DrawRectangleFromCenterMode,
-  DrawSquareFromCenterMode,
-  DrawCircleFromCenterMode,
-  DrawCircleByDiameterMode,
-  DrawEllipseByBoundingBoxMode,
-  DrawRectangleUsingThreePointsMode,
-  DrawEllipseUsingThreePointsMode,
-  Draw90DegreePolygonMode,
-  DrawPolygonByDraggingMode,
-  SnappableMode,
-  TransformMode,
+  // DrawRectangleMode,
+  // DrawSquareMode,
+  // DrawRectangleFromCenterMode,
+  // DrawSquareFromCenterMode,
+  // DrawCircleFromCenterMode,
+  // DrawCircleByDiameterMode,
+  // DrawEllipseByBoundingBoxMode,
+  // DrawRectangleUsingThreePointsMode,
+  // DrawEllipseUsingThreePointsMode,
+  // Draw90DegreePolygonMode,
+  // DrawPolygonByDraggingMode,
+  // SnappableMode,
+  // TransformMode,
   EditAction,
   ClickEvent,
   StartDraggingEvent,
@@ -230,37 +230,37 @@ const defaultProps: EditableGeojsonLayerProps<any> = {
 };
 
 // Mapping of mode name to mode class (for legacy purposes)
-const modeNameMapping = {
-  view: ViewMode,
+// const modeNameMapping = {
+//   view: ViewMode,
 
-  // Alter modes
-  modify: new SnappableMode(new ModifyMode()),
-  translate: new SnappableMode(new TranslateMode()),
+//   // Alter modes
+//   modify: new SnappableMode(new ModifyMode()),
+//   translate: new SnappableMode(new TranslateMode()),
 
-  transform: new SnappableMode(new TransformMode()),
-  scale: ScaleMode,
-  rotate: RotateMode,
-  duplicate: DuplicateMode,
-  split: SplitPolygonMode,
-  extrude: ExtrudeMode,
-  elevation: ElevationMode,
+//   transform: new SnappableMode(new TransformMode()),
+//   scale: ScaleMode,
+//   rotate: RotateMode,
+//   duplicate: DuplicateMode,
+//   split: SplitPolygonMode,
+//   extrude: ExtrudeMode,
+//   elevation: ElevationMode,
 
-  // Draw modes
-  drawPoint: DrawPointMode,
-  drawLineString: DrawLineStringMode,
-  drawPolygon: DrawPolygonMode,
-  drawRectangle: DrawRectangleMode,
-  drawSquare: DrawSquareMode,
-  drawRectangleFromCenter: DrawRectangleFromCenterMode,
-  drawSquareFromCenter: DrawSquareFromCenterMode,
-  drawCircleFromCenter: DrawCircleFromCenterMode,
-  drawCircleByBoundingBox: DrawCircleByDiameterMode,
-  drawEllipseByBoundingBox: DrawEllipseByBoundingBoxMode,
-  drawRectangleUsing3Points: DrawRectangleUsingThreePointsMode,
-  drawEllipseUsing3Points: DrawEllipseUsingThreePointsMode,
-  draw90DegreePolygon: Draw90DegreePolygonMode,
-  drawPolygonByDragging: DrawPolygonByDraggingMode,
-};
+//   // Draw modes
+//   drawPoint: DrawPointMode,
+//   drawLineString: DrawLineStringMode,
+//   drawPolygon: DrawPolygonMode,
+//   drawRectangle: DrawRectangleMode,
+//   drawSquare: DrawSquareMode,
+//   drawRectangleFromCenter: DrawRectangleFromCenterMode,
+//   drawSquareFromCenter: DrawSquareFromCenterMode,
+//   drawCircleFromCenter: DrawCircleFromCenterMode,
+//   drawCircleByBoundingBox: DrawCircleByDiameterMode,
+//   drawEllipseByBoundingBox: DrawEllipseByBoundingBoxMode,
+//   drawRectangleUsing3Points: DrawRectangleUsingThreePointsMode,
+//   drawEllipseUsing3Points: DrawEllipseUsingThreePointsMode,
+//   draw90DegreePolygon: Draw90DegreePolygonMode,
+//   drawPolygonByDragging: DrawPolygonByDraggingMode,
+// };
 
 // type State = {
 //   mode: GeoJsonEditMode,
@@ -376,13 +376,13 @@ export default class EditableGeoJsonLayer extends EditableLayer<
           // They passed a constructor/class, so new it up
           const ModeConstructor = props.mode;
           mode = new ModeConstructor();
-        } else if (typeof props.mode === 'string') {
-          // Lookup the mode based on its name (for backwards compatibility)
-          mode = modeNameMapping[props.mode];
-          // eslint-disable-next-line no-console
-          console.warn(
-            "Deprecated use of passing `mode` as a string. Pass the mode's class constructor instead."
-          );
+          // } else if (typeof props.mode === 'string') {
+          //   // Lookup the mode based on its name (for backwards compatibility)
+          //   mode = modeNameMapping[props.mode];
+          //   // eslint-disable-next-line no-console
+          //   console.warn(
+          //     "Deprecated use of passing `mode` as a string. Pass the mode's class constructor instead."
+          //   );
         } else {
           // Should be an instance of EditMode in this case
           mode = props.mode;

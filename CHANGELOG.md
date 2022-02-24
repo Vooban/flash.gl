@@ -2,9 +2,13 @@
 
 _All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html)._
 
-<!-- INSERT HERE -->
+## [v2](https://github.com/vooban/flash.gl/compare/v1.0.2-alpha.1...v2) - TBD
 
-## [v1.0.2-alpha.1](https://github.com/uber/nebula.gl/compare/v1.0.2-alpha.0...v1.0.2-alpha.1) - TBD
+### Changes
+
+-
+
+## [v1.0.2-alpha.1](https://github.com/uber/nebula.gl/compare/v1.0.2-alpha.0...v1.0.2-alpha.1) - Not Released
 
 ### Changes
 

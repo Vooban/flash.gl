@@ -21,6 +21,9 @@ import {
 } from './mode-handler';
 
 // TODO edit-modes: delete handlers once EditMode fully implemented
+/**
+ * @deprecated use edit-modes
+ */
 export class ModifyHandler extends ModeHandler {
   _lastPointerMovePicks: any;
 

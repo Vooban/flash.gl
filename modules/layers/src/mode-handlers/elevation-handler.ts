@@ -15,6 +15,9 @@ function defaultCalculateElevationChange({
 }
 
 // TODO edit-modes: delete handlers once EditMode fully implemented
+/**
+ * @deprecated use edit-modes
+ */
 export class ElevationHandler extends ModifyHandler {
   makeElevatedEvent(
     event: PointerMoveEvent | StopDraggingEvent,

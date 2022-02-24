@@ -7,6 +7,9 @@ import { EditAction, getIntermediatePosition } from './mode-handler';
 import { ThreeClickPolygonHandler } from './three-click-polygon-handler';
 
 // TODO edit-modes: delete handlers once EditMode fully implemented
+/**
+ * @deprecated use edit-modes
+ */
 export class DrawEllipseUsingThreePointsHandler extends ThreeClickPolygonHandler {
   handlePointerMove(
     event: PointerMoveEvent

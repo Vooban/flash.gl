@@ -5,6 +5,9 @@ import { EditAction } from './mode-handler';
 import { TwoClickPolygonHandler } from './two-click-polygon-handler';
 
 // TODO edit-modes: delete handlers once EditMode fully implemented
+/**
+ * @deprecated use edit-modes
+ */
 export class DrawCircleFromCenterHandler extends TwoClickPolygonHandler {
   handlePointerMove(
     event: PointerMoveEvent

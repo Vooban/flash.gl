@@ -3,6 +3,9 @@ import { ClickEvent, PointerMoveEvent } from '../event-types';
 import { EditAction, ModeHandler } from './mode-handler';
 
 // TODO edit-modes: delete handlers once EditMode fully implemented
+/**
+ * @deprecated use edit-modes
+ */
 export class DrawLineStringHandler extends ModeHandler {
   handleClick(event: ClickEvent): EditAction | null | undefined {
     super.handleClick(event);

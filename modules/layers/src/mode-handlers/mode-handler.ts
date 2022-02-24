@@ -1,5 +1,4 @@
 // TODO edit-modes: delete handlers once EditMode fully implemented
-
 import turfUnion from '@turf/union';
 import turfDifference from '@turf/difference';
 import turfIntersect from '@turf/intersect';
@@ -37,6 +36,9 @@ export type EditAction = {
   editContext: any;
 };
 
+/**
+ * @deprecated use edit-modes
+ */
 export class ModeHandler {
   // TODO: add underscore
   featureCollection: ImmutableFeatureCollection;
