@@ -1,9 +1,6 @@
 /* eslint-disable prettier/prettier */
-import bbox from '@turf/bbox';
 import turfCenterOfMass from '@turf/center-of-mass';
 import turfBearing from '@turf/bearing';
-import turfTransformRotate from '@turf/transform-rotate';
-import bboxPolygon from '@turf/bbox-polygon';
 import { point, featureCollection, Feature, Point } from '@turf/helpers';
 import polygonToLine from '@turf/polygon-to-line';
 import { coordEach } from '@turf/meta';
@@ -59,7 +56,6 @@ export class ScaleMode extends GeoJsonEditMode {
       (pt) => selectedHandle.properties.shape === pt.properties.shape
     );
     const guidePointCount = points.length;
-    console.log(selectedHandle, points, this._guidePoints);
     const oppositeIndex = (selectedHandleIndex + guidePointCount / 2) % guidePointCount;
     return points.find((p) => {
       if (!Array.isArray(p.properties.positionIndexes)) {
@@ -118,7 +114,7 @@ export class ScaleMode extends GeoJsonEditMode {
       if (this._cursor) {
         props.onUpdateCursor(this._cursor);
       }
-      const cursorGeometry = this.getSelectedFeaturesAsFeatureCollection(props);
+      const cursorGeometry = this.getSelectedFeaturesAsBoxBindedToViewBearing(props);
 
       const center = turfCenterOfMass(cursorGeometry);
       const bearing = turfBearing(center, this._selectedEditHandle);
@@ -197,30 +193,32 @@ export class ScaleMode extends GeoJsonEditMode {
     this._guidePoints = [];
     const selectedGeometry = this.getSelectedFeaturesAsFeatureCollection(props);
 
-    this._bearing = (selectedGeometry.features.length && props.modeConfig.bearing) || 0;
+    this._bearing =
+      (selectedGeometry.features.length && props.modeConfig.bearing && props.viewState?.bearing) ||
+      0;
 
     // Add buffer to the enveloping box if a single Point feature is selected
     if (this._isSinglePointGeometrySelected(selectedGeometry)) {
       return { type: 'FeatureCollection', features: [] };
     }
 
-    let boundingBox = bboxPolygon(bbox(selectedGeometry));
+    const boundingBox = this.getSelectedFeaturesAsBoxBindedToViewBearing(props);
 
     // if (this._isSingleGeometrySelected(selectedGeometry)) {
     //   boundingBox = selectedGeometry.features[0] as Feature<Polygon>;
     // } else
-    if (this._bearing) {
-      const geometry = {
-        ...selectedGeometry,
-        features: selectedGeometry.features.map((f) => {
-          const pivot = turfCenterOfMass(f.geometry);
-          return { ...f, geometry: turfTransformRotate(f.geometry, -this._bearing, { pivot }) };
-        }),
-      };
-      const box = bboxPolygon(bbox(geometry));
-      const centroid = turfCenterOfMass(geometry);
-      boundingBox = turfTransformRotate(box, this._bearing, { pivot: centroid });
-    }
+    // if (this._bearing) {
+    //   const geometry = {
+    //     ...selectedGeometry,
+    //     features: selectedGeometry.features.map((f) => {
+    //       const pivot = turfCenterOfMass(f.geometry);
+    //       return { ...f, geometry: turfTransformRotate(f.geometry, -this._bearing, { pivot }) };
+    //     }),
+    //   };
+    //   const box = bboxPolygon(bbox(geometry));
+    //   const centroid = turfCenterOfMass(geometry);
+    //   boundingBox = turfTransformRotate(box, this._bearing, { pivot: centroid });
+    // }
 
     boundingBox.properties.mode = 'scale';
     const guidePoints = [];
@@ -242,7 +240,6 @@ export class ScaleMode extends GeoJsonEditMode {
         guidePoints.push(cornerPoint);
       }
       if (previousCoord) {
-        console.log(previousCoord, coord);
         const axeMidCoord = getIntermediatePosition(coord as Position, previousCoord as Position);
         const axeMidPoint = point(axeMidCoord, {
           guideType: 'editHandle',
@@ -250,7 +247,7 @@ export class ScaleMode extends GeoJsonEditMode {
           positionIndexes: [coordIndex - 1],
           shape: 'axe',
         });
-        guidePoints.push(axeMidPoint);
+        if (false) guidePoints.push(axeMidPoint);
       }
       previousCoord = coord;
     });

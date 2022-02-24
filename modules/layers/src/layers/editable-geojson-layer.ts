@@ -234,7 +234,7 @@ const modeNameMapping = {
   view: ViewMode,
 
   // Alter modes
-  modify: ModifyMode,
+  modify: new SnappableMode(new ModifyMode()),
   translate: new SnappableMode(new TranslateMode()),
 
   transform: new SnappableMode(new TransformMode()),
@@ -416,6 +416,7 @@ export default class EditableGeoJsonLayer extends EditableLayer<
       selectedIndexes: props.selectedFeatureIndexes,
       lastPointerMoveEvent: this.state.lastPointerMoveEvent,
       cursor: this.state.cursor,
+      viewState: this.context.viewport as any,
       onEdit: (editAction: EditAction<FeatureCollection>) => {
         // Force a re-render
         // This supports double-click where we need to ensure that there's a re-render between the two clicks

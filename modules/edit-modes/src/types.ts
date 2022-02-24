@@ -16,6 +16,14 @@ export type Pick = {
   isGuide: boolean;
 };
 
+type ViewportLayer = {
+  width: number;
+  height: number;
+  zoom: number;
+  bearing?: number;
+  pitch?: number;
+};
+
 export type Viewport = {
   width: number;
   height: number;
@@ -122,6 +130,9 @@ export type ModeProps<TData> = {
 
   // The last pointer move event that occurred
   lastPointerMoveEvent: PointerMoveEvent;
+
+  // The viewport
+  viewState: Viewport | ViewportLayer | undefined;
 
   // Callback used to notify applications of an edit action
   onEdit: (editAction: EditAction<TData>) => void;

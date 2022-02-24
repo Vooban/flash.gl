@@ -66,7 +66,8 @@ export class ResizeCircleMode extends GeoJsonEditMode {
               // @ts-ignore
               lineStringFeature,
               referencePoint,
-              props.modeConfig && props.modeConfig.viewport
+              // props.modeConfig && props.modeConfig.viewport
+              props.viewState
             );
             if (
               !intermediatePoint ||

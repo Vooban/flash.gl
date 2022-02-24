@@ -2,6 +2,10 @@ import turfUnion from '@turf/union';
 import turfDifference from '@turf/difference';
 import turfIntersect from '@turf/intersect';
 import rewind from '@turf/rewind';
+import turfCenterOfMass from '@turf/center-of-mass';
+import turfTransformRotate from '@turf/transform-rotate';
+import turfBboxPolygon from '@turf/bbox-polygon';
+import turfBbox from '@turf/bbox';
 
 import {
   EditAction,
@@ -64,26 +68,39 @@ export class GeoJsonEditMode implements EditMode<FeatureCollection, GuideFeature
 
   getCursorState = (graphicBearing: number, props: ModeProps<FeatureCollection>) => {
     const getPositiveBearing = (angle) => (angle < 0 ? angle + 180 : angle);
-    const viewBearing = props.modeConfig?.bearing || 0;
-    const bearing = getPositiveBearing(graphicBearing - viewBearing) % 180;
-    switch (Math.round(bearing / (180 / 8))) {
+    const viewBearing = props.viewState?.bearing || 0;
+    const bearing = Math.round(getPositiveBearing(graphicBearing - viewBearing) % 180);
+
+    switch (bearing) {
       case 0:
-      case 1:
-      case 8:
+      case 180:
         return 'ns-resize';
-      case 2:
-      case 3:
-        return 'nesw-resize';
-      case 4:
-      case 5:
+      case 90:
         return 'ew-resize';
-      case 6:
-      case 7:
-        return 'nwse-resize';
       default:
-        return null;
+        return bearing < 90 ? 'nesw-resize' : 'nwse-resize';
     }
   };
+
+  getSelectedFeaturesAsBoxBindedToViewBearing(props: ModeProps<FeatureCollection>) {
+    const selectedGeometry = this.getSelectedFeaturesAsFeatureCollection(props);
+    const bearing =
+      (selectedGeometry.features.length && props.modeConfig.bearing && props.viewState?.bearing) ||
+      0;
+    if (bearing) {
+      const geometry = {
+        ...selectedGeometry,
+        features: selectedGeometry.features.map((f) => {
+          const pivot = turfCenterOfMass(f.geometry);
+          return { ...f, geometry: turfTransformRotate(f.geometry, -bearing, { pivot }) };
+        }),
+      };
+      const box = turfBboxPolygon(turfBbox(geometry));
+      const centroid = turfCenterOfMass(geometry);
+      return turfTransformRotate(box, bearing, { pivot: centroid });
+    }
+    return turfBboxPolygon(turfBbox(selectedGeometry));
+  }
 
   getSelectedFeaturesAsFeatureCollection(props: ModeProps<FeatureCollection>): FeatureCollection {
     const { features } = props.data;

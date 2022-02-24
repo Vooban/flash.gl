@@ -52,6 +52,8 @@ import {
 } from 'nebula.gl';
 
 import sampleGeoJson from '../../data/sample-geojson.json';
+import sampleGeoJsonOther from '../../data/sample-geojson2.json';
+import bollardGeoJson from '../../data/bollards-geojson.json';
 // import geojson from '../../data/map-line.json';
 
 import iconSheet from '../../data/edit-handles.png';
@@ -134,7 +136,7 @@ const ALL_MODES: any = [
   {
     category: 'Alter',
     modes: [
-      { label: 'Modify', mode: ModifyMode },
+      { label: 'Modify', mode: new SnappableMode(new ModifyMode()) },
       { label: 'Resize Circle', mode: ResizeCircleMode },
       { label: 'Elevation', mode: ElevationMode },
       { label: 'Translate', mode: new SnappableMode(new TranslateMode()) },
@@ -234,10 +236,13 @@ export default class Example extends React.Component<
   {
     viewport: Record<string, any>;
     testFeatures: any;
+    otherFeatures: any;
+    bollardFeatures: any;
     mode: typeof GeoJsonEditMode;
     modeConfig: any;
     pointsRemovable: boolean;
     selectedFeatureIndexes: number[];
+    selectedOtherFeatureIndexes: number[];
     editHandleType: string;
     selectionTool?: string;
     showGeoJson: boolean;
@@ -256,10 +261,13 @@ export default class Example extends React.Component<
     this.state = {
       viewport: initialViewport,
       testFeatures: sampleGeoJson,
+      otherFeatures: sampleGeoJsonOther,
+      bollardFeatures: bollardGeoJson,
       mode: DrawPolygonMode,
       modeConfig: null,
       pointsRemovable: true,
       selectedFeatureIndexes: [],
+      selectedOtherFeatureIndexes: [],
       editHandleType: 'point',
       selectionTool: null,
       showGeoJson: false,
@@ -388,7 +396,13 @@ export default class Example extends React.Component<
           type: 'FeatureCollection',
           features: testFeatures,
         };
+      } else if (testFeatures.type === 'Feature') {
+        testFeatures = {
+          type: 'FeatureCollection',
+          features: [testFeatures],
+        };
       }
+      testFeatures.features = [...testFeatures.features, ...this.state.testFeatures.features];
       // eslint-disable-next-line
       console.log('Loaded JSON:', testFeatures);
       this.setState({ testFeatures });
@@ -955,21 +969,18 @@ export default class Example extends React.Component<
     if (mode === ElevationMode) {
       modeConfig = {
         ...modeConfig,
-        viewport,
         calculateElevationChange: (opts) =>
           ElevationMode.calculateElevationChangeWithViewport(viewport, opts),
       };
     } else if (mode === ModifyMode) {
       modeConfig = {
         ...modeConfig,
-        viewport,
         lockRectangles: true,
       };
     } else if (mode instanceof SnappableMode && modeConfig) {
       if (mode._handler instanceof TranslateMode) {
         modeConfig = {
           ...modeConfig,
-          viewport,
           screenSpace: true,
         };
       }
@@ -995,6 +1006,7 @@ export default class Example extends React.Component<
                 ],
               },
             },
+            ...bollardGeoJson.features,
           ],
         };
       }
@@ -1040,7 +1052,7 @@ export default class Example extends React.Component<
     }
 
     if (this.state.enableBearingWatch) {
-      modeConfig = { ...modeConfig, bearing: this.state.viewport.bearing };
+      modeConfig = { ...modeConfig, bearing: this.state.enableBearingWatch };
     }
 
     // FLASH: it renders features
@@ -1065,6 +1077,26 @@ export default class Example extends React.Component<
     //   minZoom: 0,
     //   maxZoom: 23,
     // });
+
+    const gjLayer = new EditableGeoJsonLayer({
+      id: 'gjLayer',
+      data: this.state.otherFeatures,
+      mode: ViewMode,
+      selectedFeatureIndexes: this.state.selectedOtherFeatureIndexes,
+      onEdit: ({ updatedData }) => {
+        this.setState({ otherFeatures: updatedData });
+      },
+    });
+
+    const bollardLayer = new EditableGeoJsonLayer({
+      id: 'bollardLayer',
+      data: this.state.bollardFeatures,
+      mode: ViewMode,
+      selectedFeatureIndexes: [],
+      onEdit: ({ updatedData }) => {
+        this.setState({ otherFeatures: updatedData });
+      },
+    });
 
     const editableGeoJsonLayer = new EditableGeoJsonLayer({
       id: 'geojson',
@@ -1145,7 +1177,7 @@ export default class Example extends React.Component<
       },
     });
 
-    const layers = [editableGeoJsonLayer];
+    const layers = [gjLayer, bollardLayer, editableGeoJsonLayer];
 
     if (this.state.selectionTool) {
       layers.push(

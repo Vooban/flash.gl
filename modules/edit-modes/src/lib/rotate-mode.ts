@@ -1,16 +1,14 @@
 /* eslint-disable prettier/prettier */
-import bbox from '@turf/bbox';
 // import turfCentroid from '@turf/centroid';
 import turfCenterOfMass from '@turf/center-of-mass';
 // import turfCenter from '@turf/center';
 import turfBearing from '@turf/bearing';
-import bboxPolygon from '@turf/bbox-polygon';
 import turfDistance from '@turf/distance';
 import turfLineSlice from '@turf/line-slice';
 import { coordEach } from '@turf/meta';
 import { getGeom } from '@turf/invariant';
 // import { point, featureCollection, lineString } from '@turf/helpers';
-import { point, lineString, Feature, featureCollection, Polygon } from '@turf/helpers';
+import { point, lineString, featureCollection, Feature } from '@turf/helpers';
 import turfTransformRotate from '@turf/transform-rotate';
 import polygonToLine from '@turf/polygon-to-line';
 import {
@@ -55,7 +53,9 @@ export class RotateMode extends GeoJsonEditMode {
     const selectedGeometry =
       this._geometryBeingRotated || this.getSelectedFeaturesAsFeatureCollection(props);
 
-    this._bearing = (selectedGeometry.features.length && props.modeConfig.bearing) || 0;
+    this._bearing =
+      (selectedGeometry.features.length && props.modeConfig.bearing && props.viewState?.bearing) ||
+      0;
 
     if (this._isSinglePointGeometrySelected(selectedGeometry)) {
       return { type: 'FeatureCollection', features: [] };
@@ -66,25 +66,25 @@ export class RotateMode extends GeoJsonEditMode {
       return featureCollection([turfCenterOfMass(selectedGeometry)]) as GuideFeatureCollection;
     }
 
-    let boundingBox = bboxPolygon(bbox(selectedGeometry));
+    const boundingBox = this.getSelectedFeaturesAsBoxBindedToViewBearing(props);
 
     // if (this._isSingleGeometrySelected(selectedGeometry)) {
     // boundingBox = selectedGeometry.features[0] as Feature<Polygon>;
     // } else
-    if (this._bearing) {
-      const geometry = {
-        ...selectedGeometry,
-        features: selectedGeometry.features.map((f) => {
-          const pivot = turfCenterOfMass(f.geometry);
-          return { ...f, geometry: turfTransformRotate(f.geometry, -this._bearing, { pivot }) };
-        }),
-      };
-      const box = bboxPolygon(bbox(geometry));
-      const centroid = turfCenterOfMass(geometry);
-      boundingBox = turfTransformRotate(box, this._bearing, { pivot: centroid });
-    }
+    // if (this._bearing) {
+    //   const geometry = {
+    //     ...selectedGeometry,
+    //     features: selectedGeometry.features.map((f) => {
+    //       const pivot = turfCenterOfMass(f.geometry);
+    //       return { ...f, geometry: turfTransformRotate(f.geometry, -this._bearing, { pivot }) };
+    //     }),
+    //   };
+    //   const box = bboxPolygon(bbox(geometry));
+    //   const centroid = turfCenterOfMass(geometry);
+    //   boundingBox = turfTransformRotate(box, this._bearing, { pivot: centroid });
+    // }
 
-    const { rotateHandle, rotateLine } = this._getRotateHandlers(boundingBox);
+    const { rotateHandle, rotateLine } = getRotateHandlers(boundingBox);
 
     // @ts-ignore
     return featureCollection([
@@ -96,49 +96,6 @@ export class RotateMode extends GeoJsonEditMode {
       rotateLine,
     ]);
   }
-
-  _getRotateHandlers = (boundingBox: Feature<Polygon>) => {
-    let topEdgeMidpointCoords = null;
-    let topEdgeCoords = [];
-    let previousCoord = null;
-    let longestEdgeLength = 0;
-
-    coordEach(boundingBox, (coord) => {
-      if (previousCoord) {
-        // @ts-ignore
-        const edgeMidpoint = getIntermediatePosition(coord, previousCoord);
-        if (!topEdgeMidpointCoords || edgeMidpoint[1] > topEdgeMidpointCoords[1]) {
-          // Get the top edge midpoint of the enveloping box
-          topEdgeMidpointCoords = edgeMidpoint;
-          topEdgeCoords = [coord, previousCoord];
-        }
-        // Get the length of the longest edge of the enveloping box
-        const edgeDistance = turfDistance(coord, previousCoord);
-        longestEdgeLength = Math.max(longestEdgeLength, edgeDistance);
-      }
-      previousCoord = coord;
-    });
-
-    const topEdgePerpendicular = turfTransformRotate(lineString(topEdgeCoords), -90, {
-      pivot: topEdgeMidpointCoords,
-    });
-    const rotateLineLength = longestEdgeLength / 1000;
-    const rotateLine = turfLineSlice(
-      topEdgeMidpointCoords,
-      [topEdgeMidpointCoords[0], topEdgeMidpointCoords[1] + rotateLineLength],
-      topEdgePerpendicular
-    );
-
-    let rotateHandle = point(rotateLine.geometry.coordinates[1], {
-      guideType: 'editHandle',
-      editHandleType: 'rotate',
-    });
-
-    return {
-      rotateHandle,
-      rotateLine: rotateLine,
-    };
-  };
 
   handleDragging(event: DraggingEvent, props: ModeProps<FeatureCollection>) {
     if (!this._isRotating) {
@@ -249,6 +206,49 @@ export class RotateMode extends GeoJsonEditMode {
       },
     };
   }
+}
+
+function getRotateHandlers(boundingBox: Feature) {
+  let topEdgeMidpointCoords = null;
+  let topEdgeCoords = [];
+  let previousCoord = null;
+  let longestEdgeLength = 0;
+
+  coordEach(boundingBox, (coord) => {
+    if (previousCoord) {
+      // @ts-ignore
+      const edgeMidpoint = getIntermediatePosition(coord, previousCoord);
+      if (!topEdgeMidpointCoords || edgeMidpoint[1] > topEdgeMidpointCoords[1]) {
+        // Get the top edge midpoint of the enveloping box
+        topEdgeMidpointCoords = edgeMidpoint;
+        topEdgeCoords = [coord, previousCoord];
+      }
+      // Get the length of the longest edge of the enveloping box
+      const edgeDistance = turfDistance(coord, previousCoord);
+      longestEdgeLength = Math.max(longestEdgeLength, edgeDistance);
+    }
+    previousCoord = coord;
+  });
+
+  const topEdgePerpendicular = turfTransformRotate(lineString(topEdgeCoords), -90, {
+    pivot: topEdgeMidpointCoords,
+  });
+  const rotateLineLength = longestEdgeLength / 1000;
+  const rotateLine = turfLineSlice(
+    topEdgeMidpointCoords,
+    [topEdgeMidpointCoords[0], topEdgeMidpointCoords[1] + rotateLineLength],
+    topEdgePerpendicular
+  );
+
+  let rotateHandle = point(rotateLine.geometry.coordinates[1], {
+    guideType: 'editHandle',
+    editHandleType: 'rotate',
+  });
+
+  return {
+    rotateHandle,
+    rotateLine: rotateLine,
+  };
 }
 
 function getRotationAngle(centroid: Position, startDragPoint: Position, currentPoint: Position) {
