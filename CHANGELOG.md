@@ -6,7 +6,19 @@ _All notable changes to this project will be documented in this file. This proje
 
 ### Changes
 
--
+- Make alter mode compatible with view bearing, it follow the earth rotation while editing the polygon
+- Added monochrome mapbox style with beauport site
+- Added bollard layer with anchor points to be able to snap feature to it
+- Deleted other example
+- Added two different polygon geojson layer to show the possibility of interacting and hiding different layer of polygons
+- Added equipment graphics and esri webMercatorUtils convertor to geojson
+- edited rotate, transform, scale and extrude mode
+- updated cursor to follow view bearing while editing a polygon
+- Removed viewport from modeConfig since it's already avaiable in this.context
+- use centerOfMass instead of Centroid while editing polygon
+- removed deprecated "mode" constructor as string
+- deprecated old mode handlers (will be removed all old handlers)
+- renamed nebula.gl to flash.gl since it won't work as a public geojson editor, we won't support editing multiple polygon at once for instance, but the drawing tools will always display the view north and not the true north.
 
 ## [v1.0.2-alpha.1](https://github.com/uber/nebula.gl/compare/v1.0.2-alpha.0...v1.0.2-alpha.1) - Not Released
 
