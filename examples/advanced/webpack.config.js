@@ -63,7 +63,7 @@ const CONFIG = {
 
   // Optional: Enables reading mapbox token from environment variable
   plugins: [
-    new HtmlWebpackPlugin({ title: 'nebula.gl' }),
+    new HtmlWebpackPlugin({ title: 'flash.gl' }),
     new webpack.EnvironmentPlugin(['MapboxAccessToken']),
   ],
 };

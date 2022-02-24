@@ -3,6 +3,9 @@ import { EditAction } from './mode-handler';
 import { TranslateHandler } from './translate-handler';
 
 // TODO edit-modes: delete handlers once EditMode fully implemented
+/**
+ * @deprecated use edit-modes
+ */
 export class DuplicateHandler extends TranslateHandler {
   handleStartDragging(event: StartDraggingEvent): EditAction | null | undefined {
     if (!this._isTranslatable) {

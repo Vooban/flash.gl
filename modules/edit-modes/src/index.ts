@@ -13,7 +13,7 @@ export { RotateMode } from './lib/rotate-mode';
 export { DuplicateMode } from './lib/duplicate-mode';
 export { ExtendLineStringMode } from './lib/extend-line-string-mode';
 export { SplitPolygonMode } from './lib/split-polygon-mode';
-export { ExtrudeMode } from './lib/extrude-mode';
+export { ExtrudeMode } from './lib/extrude-mode-2';
 export { ElevationMode } from './lib/elevation-mode';
 export { TransformMode } from './lib/transform-mode';
 

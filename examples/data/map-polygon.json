@@ -1,0 +1,1983 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Batiment",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "5527",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19397532279356, 46.834035445389674, 0],
+            [-71.19389382515647, 46.83407088187061, 0],
+            [-71.19399653653397, 46.83418213294659, 0],
+            [-71.19407803427006, 46.834146696392665, 0],
+            [-71.19397532279356, 46.834035445389674, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Annexe de batiment",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "5528",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19403805145068, 46.8340623768971, 0],
+            [-71.19402401983658, 46.83404717867295, 0],
+            [-71.19399700161519, 46.834058926654535, 0],
+            [-71.1940110332248, 46.834074124881994, 0],
+            [-71.19403805145068, 46.8340623768971, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Cloture",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "LAND_FENCE",
+        "EntityHand": "5B02",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19998734646617, 46.83255769934983, 0],
+            [-71.20005508008093, 46.83252789335649, 0],
+            [-71.19999129457514, 46.832459621835575, 0],
+            [-71.19992356100963, 46.832489427790975, 0],
+            [-71.19998734646617, 46.83255769934983, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Base de beton",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A647",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19898888323087, 46.83212428434916, 0],
+            [-71.19897613822555, 46.83211033754602, 0],
+            [-71.19896281243084, 46.832116073184956, 0],
+            [-71.1989755574341, 46.8321300199893, 0],
+            [-71.19898888323087, 46.83212428434916, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Base de beton",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A648",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19897029335408, 46.83212596842813, 0],
+            [-71.19895114455205, 46.83210501396498, 0],
+            [-71.19890038436004, 46.83212686194982, 0],
+            [-71.19891953315029, 46.832147816421454, 0],
+            [-71.19897029335408, 46.83212596842813, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A64C",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19561232356727, 46.83347580635784, 0],
+            [-71.19560911613424, 46.83347230219284, 0],
+            [-71.19557936760133, 46.8334851266732, 0],
+            [-71.19558257503323, 46.83348863083902, 0],
+            [-71.19561232356727, 46.83347580635784, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Base de beton",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A64D",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19566364799347, 46.83347830977596, 0],
+            [-71.19563700888007, 46.83348979545131, 0],
+            [-71.19569279614772, 46.83355073497744, 0],
+            [-71.19571943527907, 46.83353924928913, 0],
+            [-71.19566364799347, 46.83347830977596, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Base de beton",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A64E",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19559641641123, 46.83350463975358, 0],
+            [-71.19556022166714, 46.83352024537847, 0],
+            [-71.19561949557422, 46.83358499365152, 0],
+            [-71.19565569034421, 46.83356938800789, 0],
+            [-71.19559641641123, 46.83350463975358, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Divers",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A64F",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19585552839897, 46.83348265000667, 0],
+            [-71.19581779150126, 46.833441909630444, 0],
+            [-71.19568936859797, 46.83349778506086, 0],
+            [-71.1957271054383, 46.83353852547934, 0],
+            [-71.19585552839897, 46.83348265000667, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Base de beton",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A650",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19567995020313, 46.83354055740155, 0],
+            [-71.19566601092299, 46.83352531927054, 0],
+            [-71.19565490880898, 46.83353010226521, 0],
+            [-71.19566884808724, 46.83354534039758, 0],
+            [-71.19567995020313, 46.83354055740155, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A651",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.1955108840299, 46.83334366305645, 0],
+            [-71.19550663065422, 46.83333901615965, 0],
+            [-71.19544891000085, 46.833363899290795, 0],
+            [-71.19545316337357, 46.83336854618974, 0],
+            [-71.1955108840299, 46.83334366305645, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Base de beton",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A652",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19537213440836, 46.83316063723445, 0],
+            [-71.19527818269917, 46.83310116422483, 0],
+            [-71.19520043027629, 46.833159028699775, 0],
+            [-71.19529437160766, 46.8332184952035, 0],
+            [-71.19537213440836, 46.83316063723445, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A653",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19513676192021, 46.83310212093413, 0],
+            [-71.1951289614886, 46.8331009145026, 0],
+            [-71.19511397584073, 46.83314654954989, 0],
+            [-71.19512177627863, 46.83314775598238, 0],
+            [-71.19513676192021, 46.83310212093413, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A654",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.1951161871535, 46.83311055822223, 0],
+            [-71.19511030479556, 46.8331096484432, 0],
+            [-71.19510258146325, 46.83313316790299, 0],
+            [-71.19510846382363, 46.83313407768244, 0],
+            [-71.1951161871535, 46.83311055822223, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A655",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19476583978322, 46.83304473402595, 0],
+            [-71.19475803936794, 46.83304352756906, 0],
+            [-71.1947430534209, 46.833089162569834, 0],
+            [-71.19475085384246, 46.8330903690277, 0],
+            [-71.19476583978322, 46.83304473402595, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A656",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19449554524759, 46.83300292842311, 0],
+            [-71.19448774484421, 46.8330017219477, 0],
+            [-71.19447275867918, 46.833047356914584, 0],
+            [-71.19448055908884, 46.833048563390946, 0],
+            [-71.19449554524759, 46.83300292842311, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A657",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19404636361027, 46.83294084870657, 0],
+            [-71.1940385632192, 46.83293964219967, 0],
+            [-71.19402818790921, 46.83297123567001, 0],
+            [-71.19403598830465, 46.83297244217759, 0],
+            [-71.19404636361027, 46.83294084870657, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A658",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19420173207202, 46.832964879812366, 0],
+            [-71.19419393167409, 46.8329636733161, 0],
+            [-71.19418355645087, 46.832995266799934, 0],
+            [-71.19419135685315, 46.83299647329687, 0],
+            [-71.19420173207202, 46.832964879812366, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Base de beton",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": null,
+        "EntityHand": "A65A",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19391307267489, 46.832857586111864, 0],
+            [-71.19375756786921, 46.83286607670846, 0],
+            [-71.19376837680564, 46.83295933952599, 0],
+            [-71.19392388211234, 46.832950850933855, 0],
+            [-71.19391307267489, 46.832857586111864, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A65B",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19386034315478, 46.83266168553318, 0],
+            [-71.19385982761382, 46.83265720146196, 0],
+            [-71.19380233024388, 46.83266031497894, 0],
+            [-71.19380284578008, 46.832664799050434, 0],
+            [-71.19386034315478, 46.83266168553318, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A65C",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19383192043622, 46.83244878484871, 0],
+            [-71.19383140489987, 46.8324443007769, 0],
+            [-71.19378174827487, 46.83244698971171, 0],
+            [-71.19378226380712, 46.83245147378379, 0],
+            [-71.19383192043622, 46.83244878484871, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A65F",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19549346641067, 46.83221498759217, 0],
+            [-71.19550022465133, 46.83221205484147, 0],
+            [-71.19548341164104, 46.832193806389526, 0],
+            [-71.19547665340174, 46.832196739139235, 0],
+            [-71.19549346641067, 46.83221498759217, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A660",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19545402503412, 46.83223210348, 0],
+            [-71.19546078327909, 46.83222917073161, 0],
+            [-71.19544397027668, 46.832210922273866, 0],
+            [-71.19543721203307, 46.83221385502127, 0],
+            [-71.19545402503412, 46.83223210348, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A661",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19659243122523, 46.831738073560814, 0],
+            [-71.19659918934587, 46.83173514074562, 0],
+            [-71.196582376116, 46.831716892454786, 0],
+            [-71.19657561799671, 46.83171982526898, 0],
+            [-71.19659243122523, 46.831738073560814, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A662",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19655299054911, 46.83175518982528, 0],
+            [-71.19655974867405, 46.831752257012404, 0],
+            [-71.19654293545207, 46.8317340087158, 0],
+            [-71.19653617732848, 46.83173694152768, 0],
+            [-71.19655299054911, 46.83175518982528, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A663",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19769112797083, 46.831261281201336, 0],
+            [-71.19769788597148, 46.831258348321676, 0],
+            [-71.1976810725221, 46.83124010019193, 0],
+            [-71.1976743145228, 46.83124303307059, 0],
+            [-71.19769112797083, 46.831261281201336, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A664",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19765169175996, 46.83127840193498, 0],
+            [-71.19765844976492, 46.83127546905763, 0],
+            [-71.19764163632341, 46.831257220922105, 0],
+            [-71.1976348783198, 46.83126015379846, 0],
+            [-71.19765169175996, 46.83127840193498, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A665",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19879038490672, 46.8307842144129, 0],
+            [-71.19879714278733, 46.83078128146875, 0],
+            [-71.19878032911834, 46.83076303350017, 0],
+            [-71.19877357123909, 46.83076596644334, 0],
+            [-71.19879038490672, 46.8307842144129, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A666",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19875094779054, 46.83080133378002, 0],
+            [-71.19875770567545, 46.83079840083816, 0],
+            [-71.19874089201434, 46.830780152863795, 0],
+            [-71.19873413413079, 46.830783085804654, 0],
+            [-71.19875094779054, 46.83080133378002, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A667",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19985154588917, 46.83021703828324, 0],
+            [-71.1998480451944, 46.830213235701564, 0],
+            [-71.1998175722902, 46.83022644998708, 0],
+            [-71.19982107298371, 46.83023025256968, 0],
+            [-71.19985154588917, 46.83021703828324, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A669",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19978752748935, 46.83014749933155, 0],
+            [-71.19978402680364, 46.83014369674784, 0],
+            [-71.19975355392266, 46.830156911016346, 0],
+            [-71.1997570546071, 46.83016071360098, 0],
+            [-71.19978752748935, 46.83014749933155, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A66A",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19972324658428, 46.83007767475576, 0],
+            [-71.19971974590769, 46.830073872169976, 0],
+            [-71.19968927305003, 46.83008708642141, 0],
+            [-71.19969277372536, 46.83009088900811, 0],
+            [-71.19972324658428, 46.83007767475576, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A66C",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.20001074463786, 46.830758824145605, 0],
+            [-71.20001459999885, 46.83075564244975, 0],
+            [-71.19998134233842, 46.83073666036584, 0],
+            [-71.19997748697679, 46.83073984206059, 0],
+            [-71.20001074463786, 46.830758824145605, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A66D",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.20000358269975, 46.83077317618195, 0],
+            [-71.20000869522454, 46.83076895699408, 0],
+            [-71.19996334387064, 46.83074307233037, 0],
+            [-71.19995823134468, 46.830747291516246, 0],
+            [-71.20000358269975, 46.83077317618195, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A66E",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19983777801714, 46.830904512151875, 0],
+            [-71.19984800667422, 46.83089607085475, 0],
+            [-71.1997966087526, 46.83086673500795, 0],
+            [-71.19978638009293, 46.83087517630055, 0],
+            [-71.19983777801714, 46.830904512151875, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A66F",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19960811649808, 46.83111329170286, 0],
+            [-71.19961855168141, 46.831104972400844, 0],
+            [-71.19956788799855, 46.83107503940527, 0],
+            [-71.1995574528131, 46.83108335870269, 0],
+            [-71.19960811649808, 46.83111329170286, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A670",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19943363187458, 46.83124349915361, 0],
+            [-71.19943874450144, 46.831239279974234, 0],
+            [-71.19939339299185, 46.83121339511072, 0],
+            [-71.19938828036386, 46.83121761428807, 0],
+            [-71.19943363187458, 46.83124349915361, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A671",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19919862423448, 46.831448679078775, 0],
+            [-71.19920373689872, 46.831444459910124, 0],
+            [-71.19914226032185, 46.831409371401236, 0],
+            [-71.19913714765605, 46.83141359056719, 0],
+            [-71.19919862423448, 46.831448679078775, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Base de beton",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A682",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19873118849506, 46.83181686459351, 0],
+            [-71.19869076944252, 46.83179544848789, 0],
+            [-71.19861589966062, 46.83186200336378, 0],
+            [-71.19865631873394, 46.831883419495504, 0],
+            [-71.19873118849506, 46.83181686459351, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A683",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19894748966968, 46.83164465487973, 0],
+            [-71.19895260237212, 46.83164043572195, 0],
+            [-71.19890725075408, 46.83161455066845, 0],
+            [-71.1989021380505, 46.831618769824225, 0],
+            [-71.19894748966968, 46.83164465487973, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A684",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.1996262863707, 46.82996603643006, 0],
+            [-71.19962278571148, 46.82996223384471, 0],
+            [-71.19958400211948, 46.82997905194881, 0],
+            [-71.19958750277708, 46.82998285453533, 0],
+            [-71.1996262863707, 46.82996603643006, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A685",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19965951360271, 46.83000844514069, 0],
+            [-71.19965601293512, 46.830004642552865, 0],
+            [-71.19962554010058, 46.830017856787364, 0],
+            [-71.19962904076691, 46.8300216593761, 0],
+            [-71.19965951360271, 46.83000844514069, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A686",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19946736295833, 46.82978330028776, 0],
+            [-71.19946309218217, 46.82977866112693, 0],
+            [-71.1994110114618, 46.82980124536216, 0],
+            [-71.19941528223532, 46.82980588452494, 0],
+            [-71.19946736295833, 46.82978330028776, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A688",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19899206890291, 46.82970153063121, 0],
+            [-71.19898457858295, 46.829693392639165, 0],
+            [-71.19897272128102, 46.829698533451065, 0],
+            [-71.19898021160033, 46.82970667144362, 0],
+            [-71.19899206890291, 46.82970153063121, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A689",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.1988751620333, 46.82975221628612, 0],
+            [-71.19886767172378, 46.82974407828643, 0],
+            [-71.19885581439945, 46.829749219086274, 0],
+            [-71.19886330470833, 46.829757357086464, 0],
+            [-71.1988751620333, 46.82975221628612, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A68C",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.1986225007802, 46.82986175831203, 0],
+            [-71.19861501049321, 46.829853620295815, 0],
+            [-71.19860315312054, 46.829858761069666, 0],
+            [-71.19861064340687, 46.82986689908636, 0],
+            [-71.1986225007802, 46.82986175831203, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A68D",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19836983849855, 46.82997129978304, 0],
+            [-71.1983623482341, 46.82996316175034, 0],
+            [-71.19835049081307, 46.82996830249818, 0],
+            [-71.19835798107685, 46.82997644053138, 0],
+            [-71.19836983849855, 46.82997129978304, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A68E",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19811717518557, 46.83008084070031, 0],
+            [-71.19810968494366, 46.83007270265111, 0],
+            [-71.19809782747426, 46.83007784337294, 0],
+            [-71.1981053177155, 46.83008598142264, 0],
+            [-71.19811717518557, 46.83008084070031, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A68F",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19786451084202, 46.830190381063, 0],
+            [-71.19785702062266, 46.8301822429973, 0],
+            [-71.1978451631049, 46.830187383693094, 0],
+            [-71.19785265332361, 46.83019552175931, 0],
+            [-71.19786451084202, 46.830190381063, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A690",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19761184559333, 46.830299921009235, 0],
+            [-71.1976043553965, 46.83029178292705, 0],
+            [-71.19759249783039, 46.83029692359682, 0],
+            [-71.19759998802654, 46.83030506167953, 0],
+            [-71.19761184559333, 46.830299921009235, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A691",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19735917906209, 46.830409460125935, 0],
+            [-71.19735168888782, 46.83040132202693, 0],
+            [-71.19733983127333, 46.830406462670986, 0],
+            [-71.19734732144694, 46.83041460076992, 0],
+            [-71.19735917906209, 46.830409460125935, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A692",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19710651180095, 46.830518999014004, 0],
+            [-71.19709902164922, 46.830510860898485, 0],
+            [-71.19708716398637, 46.83051600151653, 0],
+            [-71.19709465413743, 46.83052413963196, 0],
+            [-71.19710651180095, 46.830518999014004, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A693",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19685384335834, 46.830628537184715, 0],
+            [-71.19684635322915, 46.83062039905272, 0],
+            [-71.19683449551793, 46.83062553964472, 0],
+            [-71.19684198564644, 46.830633677776675, 0],
+            [-71.19685384335834, 46.830628537184715, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A694",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19671476022849, 46.83068883250067, 0],
+            [-71.19670727011172, 46.830680694359856, 0],
+            [-71.1966786231427, 46.830693113415364, 0],
+            [-71.19668611325693, 46.83070125155803, 0],
+            [-71.19671476022849, 46.83068883250067, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A69F",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19925527430583, 46.829592496521215, 0],
+            [-71.19924109865592, 46.829577095213246, 0],
+            [-71.19668120825918, 46.830686911906646, 0],
+            [-71.19669538347685, 46.83070231353105, 0],
+            [-71.19925527430583, 46.829592496521215, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A6A1",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19994645462089, 46.8302804809289, 0],
+            [-71.19993226794864, 46.83026508432765, 0],
+            [-71.19385299372469, 46.83290331691708, 0],
+            [-71.19386717937213, 46.83291871427035, 0],
+            [-71.19994645462089, 46.8302804809289, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A6A2",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19384685556174, 46.832911732100555, 0],
+            [-71.19387331753268, 46.832910299085846, 0],
+            [-71.1937829562579, 46.83212439381451, 0],
+            [-71.19375649466986, 46.83212582680647, 0],
+            [-71.19384685556174, 46.832911732100555, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A6A4",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.1956227998809, 46.833562670562884, 0],
+            [-71.19916019389525, 46.83203761966239, 0],
+            [-71.19914952523304, 46.83202596482929, 0],
+            [-71.19561213167411, 46.8335510154007, 0],
+            [-71.1956227998809, 46.833562670562884, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "A6A5",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.20018967155353, 46.83060220303987, 0],
+            [-71.20016926400803, 46.83059055452388, 0],
+            [-71.19866894406557, 46.83182860621013, 0],
+            [-71.19868935176169, 46.831840254990354, 0],
+            [-71.20018967155353, 46.83060220303987, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Reservoir",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "EE43",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19597954865534, 46.83529907534528, 0],
+            [-71.19591964308323, 46.835234387357595, 0],
+            [-71.19588927340209, 46.83524763247158, 0],
+            [-71.19594917895283, 46.83531232047511, 0],
+            [-71.19597954865534, 46.83529907534528, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Batiment",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "12076",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19653345061637, 46.83567952034543, 0],
+            [-71.19650785667292, 46.835651883825655, 0],
+            [-71.1963386929971, 46.835725661564126, 0],
+            [-71.19636428688972, 46.83575329812165, 0],
+            [-71.19653345061637, 46.83567952034543, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Batiment",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "12077",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19634803311085, 46.835602074431584, 0],
+            [-71.19629965801656, 46.83554983828681, 0],
+            [-71.19627111375844, 46.83556228734111, 0],
+            [-71.19631948883652, 46.835614523497924, 0],
+            [-71.19634803311085, 46.835602074431584, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Batiment",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "12078",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19636265310115, 46.83567790522985, 0],
+            [-71.1962599965865, 46.83556705526095, 0],
+            [-71.19623123103653, 46.83557960080963, 0],
+            [-71.19633388751652, 46.83569045080426, 0],
+            [-71.19636265310115, 46.83567790522985, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Generatrice",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "120AE",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.1936406534659, 46.833314697293964, 0],
+            [-71.1935971189024, 46.83333475276325, 0],
+            [-71.19364746829602, 46.83338622808784, 0],
+            [-71.19369100288192, 46.83336617259945, 0],
+            [-71.1936406534659, 46.833314697293964, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "1349D",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.20351686039207, 46.827624921950814, 0],
+            [-71.20343950791764, 46.827658683971286, 0],
+            [-71.20352451174433, 46.82775044367643, 0],
+            [-71.203601878943, 46.82771668989277, 0],
+            [-71.20351686039207, 46.827624921950814, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Rampe",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "19710",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.20068114168136, 46.83396301841612, 0],
+            [-71.20078228573581, 46.83391894320759, 0],
+            [-71.20075874629504, 46.833893502116396, 0],
+            [-71.20065760226859, 46.833937577304155, 0],
+            [-71.20068114168136, 46.83396301841612, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Rampe",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "19711",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.20065117894785, 46.8339306350516, 0],
+            [-71.20075232296664, 46.833886559869505, 0],
+            [-71.20072878355425, 46.83386111877185, 0],
+            [-71.20062763956346, 46.833905193933184, 0],
+            [-71.20065117894785, 46.8339306350516, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Rampe",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "19712",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.20024369726731, 46.834153640258506, 0],
+            [-71.20034484203974, 46.83410956543415, 0],
+            [-71.20032130272011, 46.83408412425315, 0],
+            [-71.2002201579757, 46.83412819905678, 0],
+            [-71.20024369726731, 46.834153640258506, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Rampe",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "19713",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.20021373468802, 46.834121256779724, 0],
+            [-71.20031487942477, 46.83407718198178, 0],
+            [-71.20029134013353, 46.83405174079433, 0],
+            [-71.20019019542478, 46.83409581557151, 0],
+            [-71.20021373468802, 46.834121256779724, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Batiment",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "19714",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.20052124452634, 46.8340852371788, 0],
+            [-71.20049110005573, 46.834052657324094, 0],
+            [-71.20034934271992, 46.83411442974388, 0],
+            [-71.20037948714025, 46.83414700963555, 0],
+            [-71.20052124452634, 46.8340852371788, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "19777",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19671204469896, 46.83069493032282, 0],
+            [-71.19669782449897, 46.83067954821596, 0],
+            [-71.19357382900685, 46.83203980984255, 0],
+            [-71.1935880486831, 46.83205519233672, 0],
+            [-71.19671204469896, 46.83069493032282, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "19778",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19389798968066, 46.831916913218144, 0],
+            [-71.19388815811203, 46.831906280481206, 0],
+            [-71.193872666422, 46.83191302736431, 0],
+            [-71.19388249798723, 46.83192366010258, 0],
+            [-71.19389798968066, 46.831916913218144, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "1977A",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19358016171213, 46.83201602227707, 0],
+            [-71.19355486173912, 46.83202153338077, 0],
+            [-71.19396265040547, 46.83290303189641, 0],
+            [-71.19398795074846, 46.83289752070139, 0],
+            [-71.19358016171213, 46.83201602227707, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "1977B",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19415033922743, 46.83180703832065, 0],
+            [-71.19414050762954, 46.83179640560534, 0],
+            [-71.1941250160029, 46.83180315252238, 0],
+            [-71.1941348475974, 46.83181378523902, 0],
+            [-71.19415033922743, 46.83180703832065, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "1977D",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19440269847979, 46.831697158881084, 0],
+            [-71.19439286685267, 46.831686526187426, 0],
+            [-71.1943773752894, 46.831693273138406, 0],
+            [-71.19438720691313, 46.8317039058334, 0],
+            [-71.19440269847979, 46.831697158881084, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "1977F",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19465505669847, 46.83158727888882, 0],
+            [-71.1946452250425, 46.831576646216774, 0],
+            [-71.19462973354223, 46.831583393201704, 0],
+            [-71.1946395651956, 46.831594025875084, 0],
+            [-71.19465505669847, 46.83158727888882, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "19782",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19490741388425, 46.83147739834382, 0],
+            [-71.19489758219905, 46.831466765693406, 0],
+            [-71.19488209076218, 46.83147351271229, 0],
+            [-71.19489192244478, 46.83148414536404, 0],
+            [-71.19490741388425, 46.83147739834382, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "19785",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19541212515958, 46.831257635594035, 0],
+            [-71.1954022934159, 46.83124700298688, 0],
+            [-71.1953868021058, 46.83125375007366, 0],
+            [-71.19539663384688, 46.831264382682136, 0],
+            [-71.19541212515958, 46.831257635594035, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "19787",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19562795437851, 46.8311636574271, 0],
+            [-71.19561812260983, 46.83115302483845, 0],
+            [-71.19560263135394, 46.83115977195427, 0],
+            [-71.19561246312004, 46.83117040454426, 0],
+            [-71.19562795437851, 46.8311636574271, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "19789",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19574472320497, 46.83111281266031, 0],
+            [-71.19573489142275, 46.831102180081665, 0],
+            [-71.19571940019621, 46.831108927213194, 0],
+            [-71.19572923197582, 46.83111955979316, 0],
+            [-71.19574472320497, 46.83111281266031, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "1978B",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19515977003915, 46.831367517245, 0],
+            [-71.1951499383247, 46.83135688461622, 0],
+            [-71.19513444695122, 46.831363631669056, 0],
+            [-71.19514427866307, 46.83137426429916, 0],
+            [-71.19515977003915, 46.831367517245, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "1978E",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19599707593213, 46.83100292972756, 0],
+            [-71.19598724412106, 46.83099229717054, 0],
+            [-71.1959717529575, 46.830999044336004, 0],
+            [-71.19598158476677, 46.83100967689435, 0],
+            [-71.19599707593213, 46.83100292972756, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "1978F",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19624942762799, 46.83089304624155, 0],
+            [-71.1962395957877, 46.83088241370618, 0],
+            [-71.19622410468753, 46.830889160905585, 0],
+            [-71.19623393652603, 46.83089979344229, 0],
+            [-71.19624942762799, 46.83089304624155, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Pilier de convoyeur",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "19791",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.19650170421575, 46.830783088703924, 0],
+            [-71.19649187234626, 46.83077245619018, 0],
+            [-71.19647638130948, 46.83077920342352, 0],
+            [-71.19648621317718, 46.8307898359386, 0],
+            [-71.19650170421575, 46.830783088703924, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Batiment",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "281BA",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.2045503232104, 46.827263710312735, 0],
+            [-71.2045071982836, 46.82721750174139, 0],
+            [-71.20436592773709, 46.827279611384036, 0],
+            [-71.20440905259373, 46.82732582000849, 0],
+            [-71.2045503232104, 46.827263710312735, 0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Layer": "Batiment",
+        "SubClasses": "AcDbEntity:AcDbFace",
+        "ExtendedEn": null,
+        "Linetype": "Continuous",
+        "EntityHand": "358C0",
+        "Text": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-71.2016385546372, 46.8286821866701, 0],
+            [-71.20166179589111, 46.82866713417234, 0],
+            [-71.2016179328645, 46.82863523133354, 0],
+            [-71.2015946916119, 46.82865028382247, 0],
+            [-71.2016385546372, 46.8286821866701, 0]
+          ]
+        ]
+      }
+    }
+  ]
+}

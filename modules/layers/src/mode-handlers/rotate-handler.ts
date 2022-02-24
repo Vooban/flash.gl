@@ -6,6 +6,9 @@ import { PointerMoveEvent, StartDraggingEvent, StopDraggingEvent } from '../even
 import { EditAction, ModeHandler } from './mode-handler';
 
 // TODO edit-modes: delete handlers once EditMode fully implemented
+/**
+ * @deprecated use edit-modes
+ */
 export class RotateHandler extends ModeHandler {
   _isRotatable: boolean;
   _geometryBeingRotated: FeatureCollection | null | undefined;

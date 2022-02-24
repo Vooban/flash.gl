@@ -13,6 +13,9 @@ import { ClickEvent, PointerMoveEvent } from '../event-types';
 import { EditAction, ModeHandler } from './mode-handler';
 
 // TODO edit-modes: delete handlers once EditMode fully implemented
+/**
+ * @deprecated use edit-modes
+ */
 export class SplitPolygonHandler extends ModeHandler {
   calculateGroundCoords(clickSequence: any, groundCoords: any) {
     const modeConfig = this.getModeConfig();

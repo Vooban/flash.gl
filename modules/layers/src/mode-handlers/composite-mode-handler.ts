@@ -8,6 +8,9 @@ import {
 import { ModeHandler, EditAction, EditHandle } from './mode-handler';
 
 // TODO edit-modes: delete handlers once EditMode fully implemented
+/**
+ * @deprecated use edit-modes
+ */
 export class CompositeModeHandler extends ModeHandler {
   handlers: Array<ModeHandler>;
   options: Record<string, any>;

@@ -7,6 +7,9 @@ import { PointerMoveEvent, StartDraggingEvent, StopDraggingEvent } from '../even
 import { EditAction, ModeHandler } from './mode-handler';
 
 // TODO edit-modes: delete handlers once EditMode fully implemented
+/**
+ * @deprecated use edit-modes
+ */
 export class TranslateHandler extends ModeHandler {
   _geometryBeforeTranslate: FeatureCollection | null | undefined;
   _isTranslatable: boolean;
